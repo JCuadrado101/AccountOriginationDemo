@@ -1154,6 +1154,87 @@
         }
       },
       {
+        "HashCode": -1301317800,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FundingOptions"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvents",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvents",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "FundingOptions"
+        }
+      },
+      {
+        "HashCode": -953829219,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvents",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvents",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "FundingOptions",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1513635700,
         "Kind": "Components.Component",
         "Name": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
@@ -1312,87 +1393,6 @@
           "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
           "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
           "Common.TypeNameIdentifier": "AddChecking",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1301317800,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FundingOptions"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvents",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvents",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "FundingOptions"
-        }
-      },
-      {
-        "HashCode": -953829219,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvents",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvents",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "FundingOptions",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5ptxDxomG0aRC4FxehAoj80q7Zaf8wiIi4cAMnYCFgSvAe7gO950nh0d8qRkCKoLHKia3YJdkJpGRFqkaWCRFQ==",
+  "dgSpecHash": "ZvRCnUsapMtHnW4eqjGp2s32BS3JcvnadZilFRTLei1AeZbrlrKoCLhUzLQNKofw51PWhkP7yAODU0ZxLBCOpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
+  "projectFilePath": "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcuadrad\\.nuget\\packages\\blazorinputmask\\1.0.14\\blazorinputmask.1.0.14.nupkg.sha512",
     "C:\\Users\\jcuadrad\\.nuget\\packages\\fluxor\\5.7.0\\fluxor.5.7.0.nupkg.sha512",

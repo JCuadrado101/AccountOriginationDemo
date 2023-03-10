@@ -13,384 +13,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 2113607695,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Dashboard"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
-          "Common.TypeNameIdentifier": "Dashboard"
-        }
-      },
-      {
-        "HashCode": 347749769,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.Dashboard.Dashboard"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
-          "Common.TypeNameIdentifier": "Dashboard",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1567824999,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DataValidation"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvent",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvent",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
-          "Common.TypeNameIdentifier": "DataValidation"
-        }
-      },
-      {
-        "HashCode": -1564020407,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.Dashboard.DataValidation"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvent",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvent",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
-          "Common.TypeNameIdentifier": "DataValidation",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1768897647,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AddChecking"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvents",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvents",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "AddChecking"
-        }
-      },
-      {
-        "HashCode": 757982967,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.FundAccount.AddChecking"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvents",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvents",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "AddChecking",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1513635700,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EmployerInformation"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvent",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvent",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "EmployerInformation"
-        }
-      },
-      {
-        "HashCode": -304640892,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvent",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvent",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "EmployerInformation",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1301317800,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FundingOptions"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvents",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvents",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "FundingOptions"
-        }
-      },
-      {
-        "HashCode": -953829219,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvents",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvents",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
-          "Common.TypeNameIdentifier": "FundingOptions",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1221199815,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundingAccountPath",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FundingAccountPath"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundingAccountPath",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
-          "Common.TypeNameIdentifier": "FundingAccountPath"
-        }
-      },
-      {
-        "HashCode": 248294313,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.FundingAccountPath",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.FundingAccountPath"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.FundingAccountPath",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
-          "Common.TypeNameIdentifier": "FundingAccountPath",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -2050296283,
         "Kind": "Components.Component",
         "Name": "Account_Origination_Demo.Pages.Index",
@@ -850,43 +472,6 @@
         }
       },
       {
-        "HashCode": 1919197226,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.SavingsAccountPath",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SavingsAccountPath"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccountPath",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
-          "Common.TypeNameIdentifier": "SavingsAccountPath"
-        }
-      },
-      {
-        "HashCode": 970239005,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.SavingsAccountPath",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.SavingsAccountPath"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccountPath",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
-          "Common.TypeNameIdentifier": "SavingsAccountPath",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -2048930031,
         "Kind": "Components.Component",
         "Name": "Account_Origination_Demo.Pages.SavingsAccount.Completed",
@@ -1272,87 +857,6 @@
         }
       },
       {
-        "HashCode": -2052357558,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FundAccountStart"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvent",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvent",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.SavingsAccount",
-          "Common.TypeNameIdentifier": "FundAccountStart"
-        }
-      },
-      {
-        "HashCode": 1102821505,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EventAfterSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "EventAfterSubmit",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GoBackEvent",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "GoBackEvent",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
-          "Common.TypeNamespace": "Account_Origination_Demo.Pages.SavingsAccount",
-          "Common.TypeNameIdentifier": "FundAccountStart",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1293338877,
         "Kind": "Components.Component",
         "Name": "Account_Origination_Demo.Pages.SavingsAccount.Upload",
@@ -1434,39 +938,498 @@
         }
       },
       {
-        "HashCode": -148020075,
+        "HashCode": -2052357558,
         "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.App",
+        "Name": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
         "AssemblyName": "Account-Origination-Demo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "FundAccountStart"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvent",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.App",
-          "Common.TypeNamespace": "Account_Origination_Demo",
-          "Common.TypeNameIdentifier": "App"
+          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.SavingsAccount",
+          "Common.TypeNameIdentifier": "FundAccountStart"
         }
       },
       {
-        "HashCode": 1588824614,
+        "HashCode": 1102821505,
         "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.App",
+        "Name": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
         "AssemblyName": "Account-Origination-Demo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Account_Origination_Demo.App"
+            "TagName": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvent",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.App",
-          "Common.TypeNamespace": "Account_Origination_Demo",
-          "Common.TypeNameIdentifier": "App",
+          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccount.FundAccountStart",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.SavingsAccount",
+          "Common.TypeNameIdentifier": "FundAccountStart",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1567824999,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DataValidation"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvent",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
+          "Common.TypeNameIdentifier": "DataValidation"
+        }
+      },
+      {
+        "HashCode": -1564020407,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.Dashboard.DataValidation"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvent",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.DataValidation",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
+          "Common.TypeNameIdentifier": "DataValidation",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2113607695,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Dashboard"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
+          "Common.TypeNameIdentifier": "Dashboard"
+        }
+      },
+      {
+        "HashCode": 347749769,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.Dashboard.Dashboard"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.Dashboard.Dashboard",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.Dashboard",
+          "Common.TypeNameIdentifier": "Dashboard",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1919197226,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.SavingsAccountPath",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SavingsAccountPath"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccountPath",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
+          "Common.TypeNameIdentifier": "SavingsAccountPath"
+        }
+      },
+      {
+        "HashCode": 970239005,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.SavingsAccountPath",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.SavingsAccountPath"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.SavingsAccountPath",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
+          "Common.TypeNameIdentifier": "SavingsAccountPath",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1513635700,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EmployerInformation"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvent",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "EmployerInformation"
+        }
+      },
+      {
+        "HashCode": -304640892,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvent",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvent",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.EmployerInformation",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "EmployerInformation",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1768897647,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddChecking"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvents",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvents",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "AddChecking"
+        }
+      },
+      {
+        "HashCode": 757982967,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.FundAccount.AddChecking"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvents",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvents",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.AddChecking",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "AddChecking",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1301317800,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FundingOptions"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvents",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvents",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "FundingOptions"
+        }
+      },
+      {
+        "HashCode": -953829219,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EventAfterSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "EventAfterSubmit",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GoBackEvents",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "GoBackEvents",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundAccount.FundingOptions",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages.FundAccount",
+          "Common.TypeNameIdentifier": "FundingOptions",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1221199815,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundingAccountPath",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FundingAccountPath"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundingAccountPath",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
+          "Common.TypeNameIdentifier": "FundingAccountPath"
+        }
+      },
+      {
+        "HashCode": 248294313,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Pages.FundingAccountPath",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Pages.FundingAccountPath"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Pages.FundingAccountPath",
+          "Common.TypeNamespace": "Account_Origination_Demo.Pages",
+          "Common.TypeNameIdentifier": "FundingAccountPath",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -5149,183 +5112,6 @@
         }
       },
       {
-        "HashCode": -503874308,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProgressFundingWizardComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WizardStep",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WizardStep",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
-          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
-          "Common.TypeNameIdentifier": "ProgressFundingWizardComponent"
-        }
-      },
-      {
-        "HashCode": -2051989622,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WizardStep",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WizardStep",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
-          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
-          "Common.TypeNameIdentifier": "ProgressFundingWizardComponent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 691047860,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProgressJointWizardComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WizardStep",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WizardStep",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
-          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
-          "Common.TypeNameIdentifier": "ProgressJointWizardComponent"
-        }
-      },
-      {
-        "HashCode": -484358013,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WizardStep",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WizardStep",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
-          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
-          "Common.TypeNameIdentifier": "ProgressJointWizardComponent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -262716844,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProgressWizardComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WizardStep",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WizardStep",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
-          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
-          "Common.TypeNameIdentifier": "ProgressWizardComponent"
-        }
-      },
-      {
-        "HashCode": 756431743,
-        "Kind": "Components.Component",
-        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
-        "AssemblyName": "Account-Origination-Demo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "WizardStep",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WizardStep",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
-          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
-          "Common.TypeNameIdentifier": "ProgressWizardComponent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1855964414,
         "Kind": "Components.Component",
         "Name": "Account_Origination_Demo.Shared.Components.Title.Title",
@@ -5654,6 +5440,183 @@
         }
       },
       {
+        "HashCode": 691047860,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProgressJointWizardComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WizardStep",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WizardStep",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
+          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
+          "Common.TypeNameIdentifier": "ProgressJointWizardComponent"
+        }
+      },
+      {
+        "HashCode": -484358013,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WizardStep",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WizardStep",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressJointWizardComponent",
+          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
+          "Common.TypeNameIdentifier": "ProgressJointWizardComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -262716844,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProgressWizardComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WizardStep",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WizardStep",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
+          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
+          "Common.TypeNameIdentifier": "ProgressWizardComponent"
+        }
+      },
+      {
+        "HashCode": 756431743,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WizardStep",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WizardStep",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressWizardComponent",
+          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
+          "Common.TypeNameIdentifier": "ProgressWizardComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -503874308,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProgressFundingWizardComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WizardStep",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WizardStep",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
+          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
+          "Common.TypeNameIdentifier": "ProgressFundingWizardComponent"
+        }
+      },
+      {
+        "HashCode": -2051989622,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "WizardStep",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WizardStep",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.Shared.Components.ProgressWizard.ProgressFundingWizardComponent",
+          "Common.TypeNamespace": "Account_Origination_Demo.Shared.Components.ProgressWizard",
+          "Common.TypeNameIdentifier": "ProgressFundingWizardComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 623648226,
         "Kind": "Components.Component",
         "Name": "Account_Origination_Demo.Shared.MainLayout",
@@ -5756,6 +5719,43 @@
           "Common.TypeNamespace": "Account_Origination_Demo.Shared",
           "Common.TypeNameIdentifier": "MainLayout",
           "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -148020075,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.App",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.App",
+          "Common.TypeNamespace": "Account_Origination_Demo",
+          "Common.TypeNameIdentifier": "App"
+        }
+      },
+      {
+        "HashCode": 1588824614,
+        "Kind": "Components.Component",
+        "Name": "Account_Origination_Demo.App",
+        "AssemblyName": "Account-Origination-Demo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Account_Origination_Demo.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Account_Origination_Demo.App",
+          "Common.TypeNamespace": "Account_Origination_Demo",
+          "Common.TypeNameIdentifier": "App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

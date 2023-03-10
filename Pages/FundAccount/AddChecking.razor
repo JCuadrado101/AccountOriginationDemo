@@ -3,6 +3,7 @@
 @inject IDispatcher dispatcher
 @inject IState<BasicInformationState> BasicInformation
 @inject IState<AddressInformationState> AddressInformation
+@inject NavigationManager Navigation
 
 <Title
     Header="Would you like to add checking and a debit card?"
@@ -91,7 +92,7 @@
         }
 
     </FormContainerComponent>
-    <ProgressButtonComponents CanGoBack="true" PreviousStep="GoBackEvents"/>
+    <ProgressButtonComponents CanGoBack="true" PreviousStep="Navigate"/>
 </EditForm>
 
 
@@ -117,4 +118,5 @@
         }
     }
     private void showValidation() => showIfInvalid = "display: block";
+    private void Navigate() => Navigation.NavigateTo("dashboard");
 }

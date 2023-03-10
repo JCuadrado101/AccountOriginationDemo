@@ -9,269 +9,269 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Account_Origination_Demo
 build_property.RootNamespace = Account_Origination_Demo
-build_property.ProjectDir = c:\Users\jcuadrad\Documents\AccountOriginationDemo\
+build_property.ProjectDir = C:\Users\jcuadrad\Documents\AccountOriginationDemo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\jcuadrad\Documents\AccountOriginationDemo
+build_property.MSBuildProjectDirectory = C:\Users\jcuadrad\Documents\AccountOriginationDemo
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/App.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Dashboard/Dashboard.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Dashboard/Dashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkXERhc2hib2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundAccount/AddChecking.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundAccount/AddChecking.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZEFjY291bnRcQWRkQ2hlY2tpbmcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundAccount/EmployerInformation.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundAccount/EmployerInformation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZEFjY291bnRcRW1wbG95ZXJJbmZvcm1hdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundAccount/FundingOptions.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundAccount/FundingOptions.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZEFjY291bnRcRnVuZGluZ09wdGlvbnMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundingAccountPath.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/FundingAccountPath.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZGluZ0FjY291bnRQYXRoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Index.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccountPath.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccountPath.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbnRBY2NvdW50UGF0aC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/AddressInformationJoint.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/AddressInformationJoint.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbnRBY2NvdW50XEFkZHJlc3NJbmZvcm1hdGlvbkpvaW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/CreateLoginJoint.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/CreateLoginJoint.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbnRBY2NvdW50XENyZWF0ZUxvZ2luSm9pbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/GetStartedJoint.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/GetStartedJoint.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbnRBY2NvdW50XEdldFN0YXJ0ZWRKb2ludC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/TermsAndConditionsJoint.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/TermsAndConditionsJoint.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbnRBY2NvdW50XFRlcm1zQW5kQ29uZGl0aW9uc0pvaW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccountPath.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccountPath.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRQYXRoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/Completed.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/Completed.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRcQ29tcGxldGVkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/CreateLogin.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/CreateLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRcQ3JlYXRlTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/GetStarted.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/GetStarted.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRcR2V0U3RhcnRlZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/MoreInformation.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/MoreInformation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRcTW9yZUluZm9ybWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/TermsAndConditions.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/TermsAndConditions.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRcVGVybXNBbmRDb25kaXRpb25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Divider/DividerComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Divider/DividerComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRGl2aWRlclxEaXZpZGVyQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/AutoCompleteAddressComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/AutoCompleteAddressComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxJbnB1dHNcQXV0b0NvbXBsZXRlQWRkcmVzc0NvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/CheckboxComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/CheckboxComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxJbnB1dHNcQ2hlY2tib3hDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/MaskInputComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/MaskInputComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxJbnB1dHNcTWFza0lucHV0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/NumberInputComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/NumberInputComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxJbnB1dHNcTnVtYmVySW5wdXRDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/PhoneNumberInputComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/PhoneNumberInputComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxJbnB1dHNcUGhvbmVOdW1iZXJJbnB1dENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/SendSMSComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/SendSMSComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxJbnB1dHNcU2VuZFNNU0NvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/TextInputComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Inputs/TextInputComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxJbnB1dHNcVGV4dElucHV0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/TermsAndConditions/DisclosureAndAgreements.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/TermsAndConditions/DisclosureAndAgreements.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVGVybXNBbmRDb25kaXRpb25zXERpc2Nsb3N1cmVBbmRBZ3JlZW1lbnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/TermsAndConditions/PACC.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/TermsAndConditions/PACC.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVGVybXNBbmRDb25kaXRpb25zXFBBQ0MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/TermsAndConditions/PRPS.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/TermsAndConditions/PRPS.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVGVybXNBbmRDb25kaXRpb25zXFBSUFMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/_Imports.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Dashboard/DataValidation.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Dashboard/DataValidation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkXERhdGFWYWxpZGF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-6480y6uztw
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/UploadJoint.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/JointAccount/UploadJoint.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbnRBY2NvdW50XFVwbG9hZEpvaW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-k3m1ibv0jl
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/FundAccountStart.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/FundAccountStart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRcRnVuZEFjY291bnRTdGFydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-lki39z23ls
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/Upload.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/SavingsAccount/Upload.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2F2aW5nc0FjY291bnRcVXBsb2FkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-bmzpy3n22l
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Body/BodyContainerComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Body/BodyContainerComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQm9keVxCb2R5Q29udGFpbmVyQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-0vin3c1cw4
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/LoadingButtonComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/LoadingButtonComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQnV0dG9uc1xMb2FkaW5nQnV0dG9uQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-8069ziyfuu
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/ModalButtonComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/ModalButtonComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQnV0dG9uc1xNb2RhbEJ1dHRvbkNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-o251hmi1pt
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/ProfileButtonComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/ProfileButtonComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQnV0dG9uc1xQcm9maWxlQnV0dG9uQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-pusn1ryp3w
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/ProgressButtonComponents.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/ProgressButtonComponents.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQnV0dG9uc1xQcm9ncmVzc0J1dHRvbkNvbXBvbmVudHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-26yke94fpi
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/SimpleBackButtonComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/SimpleBackButtonComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQnV0dG9uc1xTaW1wbGVCYWNrQnV0dG9uQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-pej7on8kzf
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/VisibleEyeButtonComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Buttons/VisibleEyeButtonComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQnV0dG9uc1xWaXNpYmxlRXllQnV0dG9uQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-6clkado2w8
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Cards/CardComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Cards/CardComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ2FyZHNcQ2FyZENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-mcyy6vm384
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Cards/LargeCardComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Cards/LargeCardComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ2FyZHNcTGFyZ2VDYXJkQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-4cs7qsy3jl
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Collapsable/Collapsable.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Collapsable/Collapsable.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ29sbGFwc2FibGVcQ29sbGFwc2FibGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wi2auwgzm4
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Collapsable/CollapsableInfoBoxContainer.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Collapsable/CollapsableInfoBoxContainer.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ29sbGFwc2FibGVcQ29sbGFwc2FibGVJbmZvQm94Q29udGFpbmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-cv0innvw13
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/CreditCard/CreditCard.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/CreditCard/CreditCard.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ3JlZGl0Q2FyZFxDcmVkaXRDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-yglp4a4odp
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/CreditCard/PaperCheck.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/CreditCard/PaperCheck.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ3JlZGl0Q2FyZFxQYXBlckNoZWNrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-i7m451gvna
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Footer/FooterComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Footer/FooterComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9vdGVyXEZvb3RlckNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-bmjryneqtz
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Containers/FormContainerComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Containers/FormContainerComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxDb250YWluZXJzXEZvcm1Db250YWluZXJDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-c0q60vxgl2
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Containers/InputContainerComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Containers/InputContainerComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxDb250YWluZXJzXElucHV0Q29udGFpbmVyQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-rzi8myc2gq
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Containers/TwoColumnContainerComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Containers/TwoColumnContainerComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxDb250YWluZXJzXFR3b0NvbHVtbkNvbnRhaW5lckNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-8k119b53l9
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Validation/CustomValidationAlertContainer.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Validation/CustomValidationAlertContainer.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxWYWxpZGF0aW9uXEN1c3RvbVZhbGlkYXRpb25BbGVydENvbnRhaW5lci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ps81na2yzp
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Validation/CustomValidationMessage.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Form/Validation/CustomValidationMessage.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRm9ybVxWYWxpZGF0aW9uXEN1c3RvbVZhbGlkYXRpb25NZXNzYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-crihl5or9y
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Header/HeaderComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Header/HeaderComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXEhlYWRlckNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-fzolef4dcy
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Modal/Modal.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Modal/Modal.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTW9kYWxcTW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-d6dn3qhlt0
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/ProgressWizard/ProgressFundingWizardComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/ProgressWizard/ProgressFundingWizardComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcUHJvZ3Jlc3NXaXphcmRcUHJvZ3Jlc3NGdW5kaW5nV2l6YXJkQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-pxsg6xtqfs
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/ProgressWizard/ProgressJointWizardComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/ProgressWizard/ProgressJointWizardComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcUHJvZ3Jlc3NXaXphcmRcUHJvZ3Jlc3NKb2ludFdpemFyZENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-nyk2d67t84
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/ProgressWizard/ProgressWizardComponent.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/ProgressWizard/ProgressWizardComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcUHJvZ3Jlc3NXaXphcmRcUHJvZ3Jlc3NXaXphcmRDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7910nx88uq
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Title/Title.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Title/Title.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVGl0bGVcVGl0bGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hw8qyjomix
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Title/ValidationTitle.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Title/ValidationTitle.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVGl0bGVcVmFsaWRhdGlvblRpdGxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-vykmatj623
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Tooltip/ToolTip.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/Components/Tooltip/ToolTip.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVG9vbHRpcFxUb29sVGlwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-4nnbylnb7d
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/MainLayout.razor]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-p7ptx4bcka
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Error.cshtml]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/_Host.cshtml]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/_Layout.cshtml]
+[C:/Users/jcuadrad/Documents/AccountOriginationDemo/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

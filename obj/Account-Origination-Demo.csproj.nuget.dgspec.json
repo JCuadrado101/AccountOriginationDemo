@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj": {}
+    "C:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj": {
+    "C:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
+        "projectUniqueName": "C:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
         "projectName": "Account-Origination-Demo",
-        "projectPath": "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
+        "projectPath": "C:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
         "packagesPath": "C:\\Users\\jcuadrad\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\obj\\",
+        "outputPath": "C:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcuadrad\\AppData\\Roaming\\NuGet\\NuGet.Config",

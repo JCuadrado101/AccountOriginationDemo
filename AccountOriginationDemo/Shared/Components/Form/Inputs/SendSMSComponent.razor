@@ -1,0 +1,42 @@
+<EditForm Model="BasicInfoModel">
+    <FormContainerComponent>
+        <MaskInputComponent
+            Label="Phone Number"
+            @bind-Value="BasicInfoModel.PhoneNumber"
+            ValidationFor="@(() => BasicInfoModel.PhoneNumber)"
+            data-mask="(000) 000-0000"
+            placeholder="(123) 123-4567"
+        />
+        @if(MessageSent)
+        {
+            <div style="margin-left: 55px; display: flex;">
+                <i class="fa-solid fa-circle-check" style="color: green; font-size: 20px; align-items: center; align-content: center"></i>
+                <p style="padding: 0px 5px; font-weight: 700; font-size: 18px">Success</p>
+            </div>
+        }
+
+    </FormContainerComponent>
+    <ProgressButtonComponents CanGoBack="true" PreviousStep="GoBackEvent" OnClick="SendingMessage" SubmitBtnName="Send SMS"/>
+</EditForm>
+
+
+@code
+{
+    BasicInfoModel BasicInfoModel = new BasicInfoModel();
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    private string? showIfInvalid = "display: none";
+    private void showValidation() => showIfInvalid = "display: block";
+    SendSMS SendSMS = new SendSMS();
+    private bool MessageSent = false;
+    private void SendingMessage()
+    {
+        string maskedNumber = BasicInfoModel.PhoneNumber!;
+        string preppedNumber = new string(maskedNumber!.Where(char.IsDigit).ToArray());
+        string result = SendSMS.ToJointOwner(phoneNumber: preppedNumber, primaryName: "Jordan Cuadrado");
+
+        if(result != "success")
+        {
+            MessageSent = true;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@page "/termsjoint"
+
+@inject IState<EligibilityState> Eligibility
+
+<EditForm Model="AgreementModel" OnValidSubmit="@EventAfterSubmit">
+    <DataAnnotationsValidator />
+    @switch(Eligibility.Value.EligibilityParam)
+    {
+        case "9002":
+            <PRPS />
+            <div style="padding: 10px 0; max-width: 800px; margin: 0 auto;">
+                <InputCheckbox id="Disclosure" @bind-Value="@isPRPSAccepted"/>
+                <label For="Disclosure" style="font-size: 14px">I accept the PRPS agreement</label>
+            </div>
+        break;
+        case "9100":
+            <PACC />
+             <div style="padding: 10px 0; max-width: 800px; margin: 0 auto;">
+                <InputCheckbox id="Disclosure" @bind-Value="@isPRPSAccepted"/>
+                <label For="Disclosure" style="font-size: 14px;">I accept the PACC agreement</label>
+            </div>
+        break;
+    }
+    <DisclosureAndAgreements />
+    <div style="padding: 10px 0; max-width: 800px; margin: 0 auto;">
+        <InputCheckbox id="Disclosure" @bind-Value="AgreementModel.IsDisclosureAccepted"/>
+        <label For="Disclosure" style="font-size: 14px">I accept the disclosure and agreement</Label>
+        <ValidationMessage For="@(() => AgreementModel.IsDisclosureAccepted)"/>
+    </div>
+    <ProgressButtonComponents CanGoBack=true PreviousStep="@GoBack"/>
+</EditForm>
+
+
+@code
+{
+     [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    AgreementModel AgreementModel = new AgreementModel();
+    private bool isDisclosureAccepted { get; set; }
+    private bool isPRPSAccepted { get; set; }
+    [Parameter] public EventCallback GoBack { get; set; }
+
+}

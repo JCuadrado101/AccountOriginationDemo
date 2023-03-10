@@ -1,0 +1,206 @@
+.stepper-wrapper[b-nyk2d67t84] {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-bottom: 18px;
+  }
+
+  /* SHORT NAME */
+
+  .started[b-nyk2d67t84]::before {
+    content: "Started";
+  }
+
+  .username-password[b-nyk2d67t84]::before {
+    content: "Login";
+  }
+
+  .identity[b-nyk2d67t84]::before {
+    content: "Identity";
+  }
+
+  /* Identity => Upload */
+
+  .upload[b-nyk2d67t84]::before {
+    content: "Upload";
+  }
+
+  /* Upload -> Identity" */
+
+  .more[b-nyk2d67t84]::before {
+    content: "Promo";
+  }
+
+  .terms-and-conditions[b-nyk2d67t84]::before {
+    content: "Terms";
+  }
+
+  .finished[b-nyk2d67t84]::before {
+    content: "Fund";
+  }
+
+  .step-name[b-nyk2d67t84] {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* LONG NAME */
+
+  .started[b-nyk2d67t84]::after {
+    content: "Basic Info";
+    display: none;
+  }
+
+  .username-password[b-nyk2d67t84]::after {
+    content: "Create Login";
+    display: none;
+  }
+
+  .identity[b-nyk2d67t84]::after {
+    content: "Identity";
+    display: none;
+  }
+
+  .upload[b-nyk2d67t84]::after {
+    content: "Upload";
+    display: none;
+  }
+
+  .terms-and-conditions[b-nyk2d67t84]::after {
+    content: "Terms & Conditions";
+    display: none;
+  }
+
+  .finished[b-nyk2d67t84]::after {
+    content: "Add Funding";
+    display: none;
+  }
+
+  .step-name[b-nyk2d67t84] {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* Normal Size Circle */
+
+  .stepper-item[b-nyk2d67t84] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .stepper-item[b-nyk2d67t84]::before {
+    position: absolute;
+    content: "";
+    border-bottom: 6px solid #ededed;
+    width: 100%;
+    top: 42px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item[b-nyk2d67t84]::after {
+    position: absolute;
+    content: "";
+    border-bottom: 6px solid #ededed;
+    width: 100%;
+    top: 42px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter[b-nyk2d67t84] {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background: white;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active[b-nyk2d67t84] {
+    font-weight: bold;    
+  }
+
+  .step-counter.active[b-nyk2d67t84] {
+    background-color: #177D78;
+  }
+
+  .stepper-item.completed .step-counter[b-nyk2d67t84] {
+    background-color: #2b8d88;
+  }
+  
+  .stepper-item.completed[b-nyk2d67t84]::after {
+    position: absolute;
+    content: "";
+    border-bottom: 6px solid #177D78;
+    width: 100%;
+    top: 42px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child[b-nyk2d67t84]::before {
+    content: none;
+  }
+  .stepper-item:last-child[b-nyk2d67t84]::after {
+    content: none;
+  }
+
+  /* Small Size Circle */
+
+
+  .stepper-item-small .step-counter[b-nyk2d67t84] {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background: white;
+    top: 27px;
+    }
+
+  .step-counter.active[b-nyk2d67t84] {
+    background-color: #177D78;
+  }
+
+  @media(min-width: 770px) {
+    .started[b-nyk2d67t84]::before, .username-password[b-nyk2d67t84]::before, .upload[b-nyk2d67t84]::before ,.terms-and-conditions[b-nyk2d67t84]::before, .finished[b-nyk2d67t84]::before {
+      display: none;
+    }
+
+    .started[b-nyk2d67t84]::after, .username-password[b-nyk2d67t84]::after, .upload[b-nyk2d67t84]::after ,.terms-and-conditions[b-nyk2d67t84]::after, .finished[b-nyk2d67t84]::after {
+      display: block;
+    }
+
+
+  }
+
+  @media(max-width: 1000px) {
+    .step-name[b-nyk2d67t84] {
+      font-size: 10px;
+    }
+    .stepper-item[b-nyk2d67t84]::before, .stepper-item[b-nyk2d67t84]::after, .stepper-item.completed[b-nyk2d67t84]::after {
+      top: 37px;
+    }
+
+    .stepper-item-small .step-counter[b-nyk2d67t84] {
+      top: 22px;
+      }
+  
+  }

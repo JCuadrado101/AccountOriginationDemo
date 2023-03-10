@@ -1,0 +1,20 @@
+﻿<div class="tooltip-alignment">
+    <i class="fa-solid fa-circle-info icon-style"></i>
+    <div class="tooltip-wrapper">
+        <span class="text-tooltip">
+            <p>@Text</p>
+            @foreach(var item in DescriptionList!)
+            {
+                <div>@item</div>
+            }
+         </span>
+        @ChildContent
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string? Text { get; set; }
+    [Parameter] public IReadOnlyList<string>? DescriptionList { get; set; }
+}

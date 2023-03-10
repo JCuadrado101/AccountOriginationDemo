@@ -1,0 +1,47 @@
+@page "/uploadjoint"
+
+<div style="text-align: center; padding: 10px 20px;">
+    <h2 style="font-weight: 700; padding-top: 50px" >Let's get you verified</h2>
+    <p style="font-size: 12px">It will only take 2 minutes</p>
+    <p class="need-text-title">What you will need:</p>
+    <div class="need-text-info">
+        <div style="display: flex; flex-direction: column">
+            <i class="fa-regular fa-id-card" style="font-size: 70px"></i>
+            <div style="text-align: center; font-size: 13px; padding: 20px 0px">
+                <ToolTip Text="List of all acceptable options for IDs:" DescriptionList="@idList">
+                    <span>Government ID</span>
+                </ToolTip>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column">
+            <i class="fa-solid fa-mobile-screen-button" style="font-size: 70px"></i>
+            <span style="text-align: center; font-size: 13px; padding-top: 20px">
+                <ToolTip
+                    Text="Minimal version requirements"
+                    DescriptionList="@smartPhoneVersions">
+                    A smartphone
+                </ToolTip>
+            </span>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; max-width: 300px; margin: 0 auto;">
+        <button type="button" class="btn btn-success" disabled style=" border-radius: 8px">Get Started</button>
+        <button style="font-size: 10px; padding: 10px 0px; border: none; background-color: transparent" onclick="@NextStep">Skip Photo Validation</button>
+    </div>
+
+    @* <div style="padding-top: 60px; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center; width: 150px; margin: 0 auto">
+        <p style="font-size: 12px">powered by</p>
+        <img src="images/PSECU.svg" style="width: 60px; padding-bottom: 10px"/>
+    </div> *@
+</div>
+<SimpleBackButtonComponent PreviousStep="GoBackEvent"/>
+
+
+@code
+{
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    [Parameter] public EventCallback NextStep { get; set; }
+
+    List<string> idList = new List<string> { "State License", "Passport" };
+    List<string> smartPhoneVersions = new List<string> { "Android: 5.1 or later", "iOS: 13 and later" };
+}

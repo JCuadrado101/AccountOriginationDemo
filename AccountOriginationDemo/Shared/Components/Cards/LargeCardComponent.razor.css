@@ -1,0 +1,102 @@
+.card-container {
+    width: 600px;
+    min-height: 200px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    margin: 10px;
+    display: flex;
+    background-color: white;
+    -webkit-box-shadow: -2px 3px 5px 0px rgba(31,30,31,0.34);
+    -moz-box-shadow: -2px 3px 5px 0px rgba(31,30,31,0.34);
+    box-shadow: -2px 3px 5px 0px rgba(31,30,31,0.34);
+}
+
+
+.edit-style {
+    color: #177D78;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    margin: 10px;
+}
+
+.edit-style:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.profile-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.icon-style {
+    font-size: 80px;
+    margin-bottom: 20px;
+    padding: 0px 20px 0px 40px;
+    color: gray;
+}
+
+.title {
+    padding: 15px 0px 10px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #084441
+}
+
+.description {
+    font-size: 12px;
+}
+
+.more-description {
+    font-size: 12px;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.profile-user-name {
+    font-weight: 700;
+}
+
+.profile-user-details {
+    margin-left: 50px; 
+    margin-top: 20px
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #177D78;
+    font-weight: 700;
+    width: 200px;
+}
+button:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 400px) {
+    .profile-title {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-style {
+        padding: 0;
+    }
+}

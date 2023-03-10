@@ -1,0 +1,28 @@
+﻿<Title
+    Header="Account Funding Payment Options"
+    Description="A required minimum amount of $5 must be maintained and you can deposit up to $100. How would you like to fund your account?"
+/>
+
+<div style="display: flex; margin: 10px; flex-wrap: wrap; justify-content: center;">
+    <CardComponent
+        FaIconName="fa-credit-card"
+        CardTitle="Pay with a Credit Card"
+        CardDescription="Pay with a credit card."
+        OnClick="EventAfterSubmit"
+    />
+    <CardComponent
+        FaIconName="fa-brands fa-hashnode"
+        CardTitle="Pay with Plaid"
+        CardDescription="Use plaid to quickly fund your account"
+        OnClick="@EventAfterSubmit"
+    />
+</div>
+
+@code
+{
+    [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    [Parameter] public EventCallback GoBackEvents { get; set; }
+    private bool ShowModal { get; set; } = false;
+    private void closeModal() => ShowModal = false;
+    private void showModal() => ShowModal = true;
+}

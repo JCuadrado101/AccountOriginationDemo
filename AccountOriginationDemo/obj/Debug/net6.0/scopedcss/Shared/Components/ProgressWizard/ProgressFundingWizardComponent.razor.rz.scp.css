@@ -1,0 +1,197 @@
+.stepper-wrapper[b-pxsg6xtqfs] {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-bottom: 18px;
+  }
+
+  /* SHORT NAME */
+
+  .started[b-pxsg6xtqfs]::before {
+    content: "Employment";
+  }
+
+  .username-password[b-pxsg6xtqfs]::before {
+    content: "Checking";
+  }
+
+  .identity[b-pxsg6xtqfs]::before {
+    content: "Identity";
+  }
+
+  /* Identity => Upload */
+
+  .upload[b-pxsg6xtqfs]::before {
+    content: "Upload";
+  }
+
+  /* Upload -> Identity" */
+
+  .more[b-pxsg6xtqfs]::before {
+    content: "Promo";
+  }
+
+  .terms-and-conditions[b-pxsg6xtqfs]::before {
+    content: "Terms";
+  }
+
+  .step-name[b-pxsg6xtqfs] {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* LONG NAME */
+
+  .started[b-pxsg6xtqfs]::after {
+    content: "Employment";
+    display: none;
+  }
+
+  .username-password[b-pxsg6xtqfs]::after {
+    content: "Checking";
+    display: none;
+  }
+
+  .identity[b-pxsg6xtqfs]::after {
+    content: "Identity";
+    display: none;
+  }
+
+  .upload[b-pxsg6xtqfs]::after {
+    content: "Upload";
+    display: none;
+  }
+
+  .terms-and-conditions[b-pxsg6xtqfs]::after {
+    content: "Terms & Conditions";
+    display: none;
+  }
+
+  .step-name[b-pxsg6xtqfs] {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* Normal Size Circle */
+
+  .stepper-item[b-pxsg6xtqfs] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .stepper-item[b-pxsg6xtqfs]::before {
+    position: absolute;
+    content: "";
+    border-bottom: 6px solid #ededed;
+    width: 100%;
+    top: 42px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item[b-pxsg6xtqfs]::after {
+    position: absolute;
+    content: "";
+    border-bottom: 6px solid #ededed;
+    width: 100%;
+    top: 42px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter[b-pxsg6xtqfs] {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background: white;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active[b-pxsg6xtqfs] {
+    font-weight: bold;    
+  }
+
+  .step-counter.active[b-pxsg6xtqfs] {
+    background-color: #177D78;
+  }
+
+  .stepper-item.completed .step-counter[b-pxsg6xtqfs] {
+    background-color: #2b8d88;
+  }
+  
+  .stepper-item.completed[b-pxsg6xtqfs]::after {
+    position: absolute;
+    content: "";
+    border-bottom: 6px solid #177D78;
+    width: 100%;
+    top: 42px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child[b-pxsg6xtqfs]::before {
+    content: none;
+  }
+  .stepper-item:last-child[b-pxsg6xtqfs]::after {
+    content: none;
+  }
+
+  /* Small Size Circle */
+
+
+  .stepper-item-small .step-counter[b-pxsg6xtqfs] {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background: white;
+    top: 27px;
+    }
+
+  .step-counter.active[b-pxsg6xtqfs] {
+    background-color: #177D78;
+  }
+
+  @media(min-width: 770px) {
+    .started[b-pxsg6xtqfs]::before, .username-password[b-pxsg6xtqfs]::before, .upload[b-pxsg6xtqfs]::before ,.terms-and-conditions[b-pxsg6xtqfs]::before {
+      display: none;
+    }
+
+    .started[b-pxsg6xtqfs]::after, .username-password[b-pxsg6xtqfs]::after, .upload[b-pxsg6xtqfs]::after ,.terms-and-conditions[b-pxsg6xtqfs]::after {
+      display: block;
+    }
+
+
+  }
+
+  @media(max-width: 1000px) {
+    .step-name[b-pxsg6xtqfs] {
+      font-size: 10px;
+    }
+    .stepper-item[b-pxsg6xtqfs]::before, .stepper-item[b-pxsg6xtqfs]::after, .stepper-item.completed[b-pxsg6xtqfs]::after {
+      top: 37px;
+    }
+
+    .stepper-item-small .step-counter[b-pxsg6xtqfs] {
+      top: 22px;
+      }
+  
+  }

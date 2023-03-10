@@ -1,0 +1,77 @@
+  <div class="check-edge">
+    <div class="check-content">
+      <div class="date-input">10/1/2020</div>
+      <div class="fake-person">John Doe</div>
+      <div class="fake-dollar-amount">34.<span class="sup">00</span></div>
+      <div class="fake-dollar-description">thirty-four dollars and <span class="sup" style="top: 0px">0</span>/<span class="sub">100</span></div>
+      <div class="fake-for">mortgage</div>
+      <div class="fullname">@FirstName @LastName</div>
+      <div class="check-title-section">
+        <div class="check-owner-information">
+          <span style="font-weight: 700;">@FirstName @LastName</span>
+          <span>@Address</span>
+          <div>
+            <span>@City</span>
+            <span>@State</span>
+            <span>@ZipCode</span>
+          </div>
+            @if(showPhoneNumber) 
+            {
+              <span class="phone-number">@PhoneNumber</span>
+            }
+        </div>
+        <div class="check-serial-information">
+          <span style="font-size: 16px; font-weight: 700; text-align: right;">001</span>
+          <span>01-1234/4567</span>
+        </div>
+      </div>
+      <div class="check-date-block">
+        <div></div>
+        <div class="check-date-container">
+          <div class="check-date-input"></div>
+          <span class="date-text">Date</span>
+        </div>
+      </div>
+      <div class="check-pay-line">
+        <div class="check-pay-underline">
+          <span class="pay-order-text">PAY TO THE <br/> ORDER OF</span>
+        </div>
+        <div class="input-payment-block">
+          <div class="dollar-sign">$</div>
+          <div class="payment-input"></div>
+        </div>
+      </div>
+      <div class="check-pay-description-block">
+        <div class="check-pay-description">
+          <span class="check-pay-description-text">Dollars</span>
+        </div>
+        <div class="check-security-description">
+          <i class="fa-solid fa-lock" style="color: black; font-size: 14px;"></i>
+          <span class="security-text">Security Features Details on Back</span>
+        </div>
+      </div>
+      <div class="psecu-label">
+        <div class="psecu-label-information">
+          <img src="images/PSECU-check.svg"/>
+          <span>harrisburg, pa, 17110-2990</span>
+        </div>
+        <div class="empty-container"></div>
+      </div>
+      <div class="check-for-container">
+        <div class="check-for"> for</div>
+        <div class="check-sign">MP</div>
+      </div>
+    </div>
+  </div>
+
+  @code
+  {
+    [Parameter] public string? FirstName { get; set; }
+    [Parameter] public string? LastName { get; set; }
+    [Parameter] public string? Address { get; set; }
+    [Parameter] public string? City { get; set; }
+    [Parameter] public string? State { get; set; }
+    [Parameter] public string? ZipCode { get; set; }
+    [Parameter] public string? PhoneNumber { get; set; }
+    [Parameter] public bool showPhoneNumber { get; set; }
+  }

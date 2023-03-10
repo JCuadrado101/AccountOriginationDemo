@@ -1,0 +1,10 @@
+.page[b-p7ptx4bcka] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-p7ptx4bcka] {
+    flex: 1;
+    padding: 10px;
+}

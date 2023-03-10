@@ -1,0 +1,69 @@
+@using System.Linq.Expressions
+@inject IJSRuntime JSRuntime;
+@inherits InputBase<string>
+
+<InputContainerComponent FieldLabelText="@Label">
+    <input class="input-style input-number @CssClass" @bind="@CurrentValue" style="border-radius: 3px;" type="@InputType" maxlength="@MaxNumber" id="@Id"/>
+        @if(IsPrivate != null)
+        {
+            <VisibleEyeButtonComponent ShowPassword="@changeTextVisibility" EyeVisible="@EyeIcon"/>
+
+        }        <div class="form-control-validation">
+            <CustomValidationMessage For="@ValidationFor"/>
+        </div>
+</InputContainerComponent>
+
+@code {
+    [Parameter, EditorRequired] public Expression<Func<string>> ValidationFor { get; set; } = default!;
+    [Parameter] public string? Label { get; set; }
+    [Parameter] public bool? IsPrivate { get; set; }
+    [Parameter] public int? MaxNumber { get; set; }
+    [Parameter] public string? Id { get; set; }
+    [Parameter] public bool? NoJS { get; set; }
+    private string? InputType { get; set; } 
+    private string? EyeIcon { get; set; } = "fa-eye";
+    protected override bool TryParseValueFromString(string? value, out string result, out string validationErrorMessage)
+    {
+        result = value!;
+        validationErrorMessage = null!;
+        return true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender) 
+    {
+        if(firstRender)
+        {
+            if(NoJS == null) 
+            {
+                await JSRuntime.InvokeVoidAsync("addCommaToNumberInput");
+            }
+        }
+    }
+
+    private void changeTextVisibility()
+    {
+        if(InputType == "password")
+        {
+            InputType = "text";
+            EyeIcon = "fa-eye-slash";
+        }
+        else 
+        {
+            InputType = "password";
+            EyeIcon = "fa-eye";
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        if(IsPrivate == null)
+        {
+            InputType = "text";
+        }
+        else
+        {
+            InputType = "password";
+        }
+    }
+}
+

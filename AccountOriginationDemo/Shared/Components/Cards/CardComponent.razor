@@ -1,0 +1,21 @@
+ <div class="card-container" @onclick="OnClick" >
+    <i class="fa-solid @FaIconName icon-style"></i>
+    <span class="title">@CardTitle</span>
+    <span class="description">@CardDescription</span>
+    <span class="more-description ">@MoreDescription</span>
+</div>
+
+@code
+{
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+    [Parameter]
+    public string? FaIconName { get; set; }
+    [Parameter]
+    public string? CardTitle { get; set; }
+    [Parameter]
+    public string? CardDescription { get; set; }
+    [Parameter]
+    public string? MoreDescription { get; set; }
+
+}

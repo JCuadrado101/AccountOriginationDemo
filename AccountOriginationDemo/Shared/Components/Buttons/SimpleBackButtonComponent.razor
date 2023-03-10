@@ -1,0 +1,10 @@
+﻿<DividerComponent BorderStyling="margin-top: 40px;" />
+<div class="btn-container">
+    <div class="btn-content-container">
+        <input type="button" id="back" value="Back" onclick=@PreviousStep />
+    </div>
+</div>
+@code
+{
+  [Parameter] public EventCallback PreviousStep { get; set; }
+}

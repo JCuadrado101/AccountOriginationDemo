@@ -1,0 +1,30 @@
+.container[b-rzi8myc2gq] {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 10px auto;
+}
+
+.field-label-text[b-rzi8myc2gq] {
+    font-size: 14px;
+    /* font-weight: 700; */
+    padding-bottom: 5px;
+}
+
+.field-input-text[b-rzi8myc2gq] {
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.field-input-text:focus[b-rzi8myc2gq] {
+    outline: 2px solid #177D78; 
+    border-radius: 2px;
+    border: none;
+    padding: 10px; 
+}
+
+.helper-text[b-rzi8myc2gq] {
+    font-size: 12px;
+}
+

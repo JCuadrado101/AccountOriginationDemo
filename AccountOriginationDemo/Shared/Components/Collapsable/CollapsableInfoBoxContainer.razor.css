@@ -1,0 +1,20 @@
+.container {
+    display: flex; justify-content: space-between; font-size: 14px
+}
+
+.second-response {
+    width: 320px;
+}
+
+@media(max-width: 760px) {
+    .second-response {
+        width: auto;
+    }
+}
+
+
+@media(max-width: 710px) {
+    .container {
+        flex-direction: column;
+    }
+}

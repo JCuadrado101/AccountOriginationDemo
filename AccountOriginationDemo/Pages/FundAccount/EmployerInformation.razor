@@ -1,0 +1,88 @@
+@inject IDispatcher dispatcher
+@inject IState<BasicInformationState> BasicInformation
+
+<Title
+    Header="Employment Information"
+/>
+<EditForm Model="@EmployerModel" OnInvalidSubmit="@showValidation" OnValidSubmit="@EventAfterSubmit">
+    <DataAnnotationsValidator />
+    <CustomValidationAlertContainer Styling="@showIfInvalid">
+        <CustomValidationMessage For="@(() => EmployerModel.EmployStatus)" isValidationSummary="true"/>
+    </CustomValidationAlertContainer>
+        <FormContainerComponent>
+                @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT BELOW *@
+                <InputContainerComponent FieldLabelText="State of Employment">
+                    <InputSelect class="dropdown-style" @bind-Value="EmployerModel.EmployStatus" >
+                        @foreach(var employ in EmploymentStatus.ListEmploymentStatuses())
+                        {
+                            <option value="@employ.Name">@employ.Name</option>
+                        }
+                    </InputSelect>
+                    <CustomValidationMessage For="@(() => EmployerModel.EmployStatus)"/>
+                </InputContainerComponent>
+                @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT ABOVE *@
+
+                @switch(EmployerModel.EmployStatus)
+                {
+                    case "Employed":
+                        @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT BELOW *@
+                        <FormContainerComponent>
+                        <InputContainerComponent FieldLabelText="Industry">
+                            <InputSelect class="dropdown-style" @bind-Value="EmployerModel.Employed!.Industry" style="max-width: 528px" >
+                                @foreach(var industry in EmploymentIndustry.ListOfIndustries())
+                                {
+                                    <option value="@industry.Name">@industry.Name</option>
+                                }
+                            </InputSelect>
+                            <CustomValidationMessage For="@(() => EmployerModel.EmployStatus)"/>
+                        </InputContainerComponent>
+                        </FormContainerComponent>
+                        @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT ABOVE *@
+                        <MaskInputComponent
+                            Label="Work Phone Number"
+                            @bind-Value="EmployerModel.Employed!.WorkNumber"
+                            ValidationFor="@(() => EmployerModel.Employed!.WorkNumber)"
+                            data-mask="(000) 000-0000"
+                            placeholder="SSN"
+                        />
+                        <NumberInputComponent Label="Work Extension" @bind-Value="EmployerModel.Employed!.WorkExtension" ValidationFor="@(() => EmployerModel.Employed!.WorkExtension)" AcceptNumber=true MaxNumber="4"/>
+                    break;
+                    case "Retired":
+                        <InputRadioGroup @bind-Value="EmployerModel.RetirementBenefit!.OneChoiceSelected">
+                            <div class="checkbox-options">
+                                <p class="label-spacing" style="padding-top: 10px; font-weight: 700">Do you receive benefits from PSERS or SERS?:</p>
+                                <div class="label-spacing">
+                                    <InputRadio Value="1" />
+                                    <label For="Disclosure" style="font-size: 14px">Yes, add Checking with Overdraft Protection Transfer Service</Label>
+                                </div>
+                                <div class="label-spacing">
+                                    <InputRadio Value="2"/>
+                                    <label For="Disclosure" style="font-size: 14px">Yes, add Checking without Overdraft Protection Transfer Service</Label>
+                                </div>
+                                <div class="label-spacing">
+                                    <InputRadio Value="3"/>
+                                    <label For="Disclosure" style="font-size: 14px">No, I would not like Checking </Label>
+                                </div>
+                            </div>
+                        </InputRadioGroup>
+                    break;
+                    case "Student":
+                        <TextInputComponent AcceptNumber="true" Label="Name of College or University "  @bind-Value="EmployerModel.Student!.NameOfUniversity"  ValidationFor="@(() => EmployerModel.Student!.NameOfUniversity)" id="expirationdate"/>
+                    break;
+                }
+        </FormContainerComponent>
+    <ProgressButtonComponents CanGoBack="true" PreviousStep="GoBackEvent"/>
+</EditForm>
+
+
+@code
+{
+    [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    EmployerModel EmployerModel = new EmployerModel();
+    EmploymentStatus EmploymentStatus = new EmploymentStatus();
+    EmploymentIndustry EmploymentIndustry = new EmploymentIndustry();
+    private string? showIfInvalid = "display: none";
+    private void showValidation() => showIfInvalid = "display: block";
+
+}

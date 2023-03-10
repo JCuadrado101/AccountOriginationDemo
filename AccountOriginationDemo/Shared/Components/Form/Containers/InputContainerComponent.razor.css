@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 10px auto;
+}
+
+.field-label-text {
+    font-size: 14px;
+    /* font-weight: 700; */
+    padding-bottom: 5px;
+}
+
+.field-input-text {
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.field-input-text:focus {
+    outline: 2px solid #177D78; 
+    border-radius: 2px;
+    border: none;
+    padding: 10px; 
+}
+
+.helper-text {
+    font-size: 12px;
+}
+

@@ -1,0 +1,50 @@
+@inject IDispatcher dispatcher
+@inject IState<BasicInformationState> BasicInformation
+@page "/addfunding"
+
+
+<Title
+    Header="Account Funding Payment Options"
+    Description="A required minimum amount of $5 must be maintained. You can deposit up to $100."
+/>
+<div style="padding: 20px 0px;">
+    <CreditCard />
+</div>
+
+<EditForm Model="@CreditCardModel" OnInvalidSubmit="@showValidation" OnValidSubmit="@EventAfterSubmit">
+        <DataAnnotationsValidator />
+        <CustomValidationAlertContainer Styling="@showIfInvalid">
+            <CustomValidationMessage For="@(() => CreditCardModel.Cardholder)" isValidationSummary="true"/>
+            <CustomValidationMessage For="@(() => CreditCardModel.CardNumber)" isValidationSummary="true"/>
+            <CustomValidationMessage For="@(() => CreditCardModel.ExpNumber)" isValidationSummary="true"/>
+            <CustomValidationMessage For="@(() => CreditCardModel.SecurityCode)" isValidationSummary="true"/>
+            <CustomValidationMessage For="@(() => CreditCardModel.ZipCode)" isValidationSummary="true"/>
+        </CustomValidationAlertContainer>
+        <FormContainerComponent>
+            <NumberInputComponent Label="Amount To Deposit ($)"  @bind-Value="CreditCardModel.DepositAmount"  ValidationFor="@(() => CreditCardModel.DepositAmount)" MaxNumber="3"/>
+            <TwoColumnContainerComponent>
+                <TextInputComponent Label="Cardholder Name" @bind-Value="CreditCardModel.Cardholder" ValidationFor="@(() => CreditCardModel.Cardholder)" Id="name"/>
+                    <svg id="ccicon" class="ccicon" width="125px" height="50px" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    </svg>
+                <NumberInputComponent Label="Card Number"  @bind-Value="CreditCardModel.CardNumber"  ValidationFor="@(() => CreditCardModel.CardNumber)" Id="cardnumber"/>
+            </TwoColumnContainerComponent>
+            <TwoColumnContainerComponent>
+                <TextInputComponent AcceptNumber="true" Label="Expiration Date"  @bind-Value="CreditCardModel.ExpNumber"  ValidationFor="@(() => CreditCardModel.ExpNumber)" id="expirationdate"/>
+                <TextInputComponent AcceptNumber="true"Label="Security Code"  @bind-Value="CreditCardModel.SecurityCode"  ValidationFor="@(() => CreditCardModel.SecurityCode)" Id="securitycode"/>
+            </TwoColumnContainerComponent>
+            <NumberInputComponent AcceptNumber="true"Label="Zip Code"  @bind-Value="CreditCardModel.ZipCode"  ValidationFor="@(() => CreditCardModel.ZipCode)" MaxNumber="5" />
+        </FormContainerComponent>
+        <ProgressButtonComponents CanGoBack="true" PreviousStep="GoBackEvent"/>
+    </EditForm>
+    <span id="generatecard" style='width: 150px; margin: 0 auto'>generate random</span>
+@code
+{
+    CreditCardModel CreditCardModel = new CreditCardModel();
+    AccountPayingOptions AccountPayingOptions = new AccountPayingOptions();
+    [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    BasicInfoModel BasicInfoModel = new BasicInfoModel();
+    private string? showIfInvalid = "display: none";
+    private void showValidation() => showIfInvalid = "display: block";
+}

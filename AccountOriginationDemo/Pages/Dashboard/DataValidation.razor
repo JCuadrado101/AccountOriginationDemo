@@ -1,0 +1,131 @@
+@page "/validate"
+
+@inject IState<BasicInformationState> BasicInformation
+@inject IState<AddressInformationState> AddressInformation
+@inject IState<LoginDetailsState> LoginDetails
+@inject NavigationManager Navigation;
+
+
+
+<ValidationTitle
+    Header="Verify Information"
+    Description="Let's verify your information before you complete your membership application"
+/>
+<div style=" display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 10px auto;">
+    <Collapsable Title="Basic Info" Collapsed="true" Value="" GoToEditLocation="getstarted/?edit" >
+        <CollapsableInfoBoxContainer
+            FirstTitle="First Name:"
+            FirstResponse="@BasicInformation.Value.FirstName"
+            SecondTitle="Last Name:"
+            SecondResponse="@BasicInformation.Value.LastName"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="SSN:"
+            FirstResponse="@BasicInformation.Value.Ssn"
+            SecondTitle="Date of Birth:"
+            SecondResponseDate="@BasicInformation.Value.DateOfBirth"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Phone Number:"
+            FirstResponse="@BasicInformation.Value.PhoneNumber"
+        />
+    </Collapsable>
+    <Collapsable Title="Username and Password" Collapsed="true" Value="" GoToEditLocation="createlogin/?edit">
+        <CollapsableInfoBoxContainer
+            FirstTitle="Username:"
+            FirstResponse="@LoginDetails.Value.Username"
+            SecondTitle="Password:"
+            SecondResponse="@LoginDetails.Value.Password"
+        />
+    </Collapsable>
+    <Collapsable Title="Address Information" Collapsed="true" Value="" GoToEditLocation="moreinformation/?edit">
+        <CollapsableInfoBoxContainer
+            FirstTitle="Residential Address:"
+            FirstResponse="@AddressInformation.Value.ResidentialAddress"
+            SecondTitle="Residential City:"
+            SecondResponse="@AddressInformation.Value.ResidentialCity"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Residential State:"
+            FirstResponse="@AddressInformation.Value.ResidentialState"
+            SecondTitle="Residential Zip Code:"
+            SecondResponse="@AddressInformation.Value.ResidentialZipCode"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Mailing Address:"
+            FirstResponse="@AddressInformation.Value.MailingAddress"
+            SecondTitle="Mailing City:"
+            SecondResponse="@AddressInformation.Value.MailingCity"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Mailing State:"
+            FirstResponse="@AddressInformation.Value.MailingState"
+            SecondTitle="Mailing Zip Code:"
+            SecondResponse="@AddressInformation.Value.MailingZipCode"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Citizenship:"
+            FirstResponse="@AddressInformation.Value.CurrentStatus"
+        />
+    </Collapsable>
+    <Collapsable Title="Joint Owner Information" Collapsed="true" Value="" GoToEditLocation="completed/?edit">
+        <CollapsableInfoBoxContainer
+            FirstTitle="First Name:"
+            FirstResponse="@BasicInformation.Value.FirstName"
+            SecondTitle="Last Name:"
+            SecondResponse="@BasicInformation.Value.LastName"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="SSN:"
+            FirstResponse="@BasicInformation.Value.Ssn"
+            SecondTitle="Date of Birth:"
+            SecondResponseDate="@BasicInformation.Value.DateOfBirth"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Phone Number:"
+            FirstResponse="@BasicInformation.Value.PhoneNumber"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Residential Address:"
+            FirstResponse="@AddressInformation.Value.ResidentialAddress"
+            SecondTitle="Residential City:"
+            SecondResponse="@AddressInformation.Value.ResidentialCity"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Residential State:"
+            FirstResponse="@AddressInformation.Value.ResidentialState"
+            SecondTitle="Residential Zip Code:"
+            SecondResponse="@AddressInformation.Value.ResidentialZipCode"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Mailing Address:"
+            FirstResponse="@AddressInformation.Value.MailingAddress"
+            SecondTitle="Mailing City:"
+            SecondResponse="@AddressInformation.Value.MailingCity"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Mailing State:"
+            FirstResponse="@AddressInformation.Value.MailingState"
+            SecondTitle="Mailing Zip Code:"
+            SecondResponse="@AddressInformation.Value.MailingZipCode"
+        />
+        <CollapsableInfoBoxContainer
+            FirstTitle="Citizenship:"
+            FirstResponse="@AddressInformation.Value.CurrentStatus"
+        />
+    </Collapsable>
+</div>
+<ProgressButtonComponents CanGoBack="true" PreviousStep="GoBackEvent" OnClick="Navigator"/>
+
+@code
+{
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    BasicInfoModel BasicInfoModel = new BasicInfoModel();
+    private void Navigator() =>  Navigation.NavigateTo("dashboard");
+
+
+}
+

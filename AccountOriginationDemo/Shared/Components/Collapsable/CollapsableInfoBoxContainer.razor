@@ -1,0 +1,31 @@
+<div class="container">
+    <div>
+        <span>
+            <strong>@FirstTitle</strong>
+        </span>
+        <span>@FirstResponse</span>
+    </div>
+    <div class="second-response" >
+        <span style="text-align: left;">
+            @if(SecondTitle == "" || SecondTitle == null)
+            {
+                <strong>@SecondResponseDate</strong>
+            }
+            else
+            {
+                <strong>@SecondTitle</strong>
+
+            }
+        </span>
+        <span>@SecondResponse</span>
+    </div>
+</div>
+
+@code
+{
+    [Parameter] public string? FirstTitle { get; set; }
+    [Parameter] public DateTime? SecondResponseDate { get; set; }
+    [Parameter] public string? FirstResponse { get; set; }
+    [Parameter] public string? SecondTitle { get; set; }
+    [Parameter] public string? SecondResponse { get; set; }
+}

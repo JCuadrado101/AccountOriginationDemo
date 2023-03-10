@@ -1,0 +1,40 @@
+﻿@page "/"
+@inject IDispatcher dispatcher
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.WebUtilities
+
+<SavingsAccountPath />
+
+@code
+{
+
+    protected override void OnInitialized()
+    {
+        var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("Product", out var _product))
+        {
+            dispatcher.Dispatch(new ProductAction(productParam: _product));
+        }
+
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("AppType", out var _appType))
+        {
+            dispatcher.Dispatch(new AppTypeAction(appTypeParam: _appType));
+        }
+
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("ExistingMember", out var _existingMember))
+        {
+            dispatcher.Dispatch(new ExistingMemberAction(existingMemberParam: _existingMember));
+        }
+
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("Eligibility", out var _eligibility))
+        {
+            dispatcher.Dispatch(new EligibilityAction(eligibilityParam: _eligibility));
+        }
+
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("Path", out var _path))
+        {
+            dispatcher.Dispatch(new ABTestingAction(abTestingParam: _path));
+        }
+
+    }
+}

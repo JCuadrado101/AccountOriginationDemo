@@ -1,0 +1,71 @@
+@page "/createloginjoint"
+@inject IDispatcher dispatcher
+@inject IState<LoginDetailsState> LoginDetails
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.WebUtilities
+
+<Title
+    Header="Set up your login"
+    Description="You can use this to access your account, check the status of your application or view/complete any pending documents."
+/>
+<EditForm Model="@CredentialsModel" OnInvalidSubmit="@showValidation" OnValidSubmit="@EventAfterSubmit">
+    <DataAnnotationsValidator />
+    <CustomValidationAlertContainer Styling="@showIfInvalid">
+        <CustomValidationMessage For="@(() => CredentialsModel.Username)" isValidationSummary="true"/>
+        <CustomValidationMessage For="@(() => CredentialsModel.Password)" isValidationSummary="true"/>
+        <CustomValidationMessage For="@(() => CredentialsModel.ConfirmPassword)" isValidationSummary="true"/>
+    </CustomValidationAlertContainer>
+    <FormContainerComponent>
+        <TextInputComponent Label="Email" @bind-Value="CredentialsModel.Username" ValidationFor="@(() => CredentialsModel.Username)" AcceptNumber=true/>
+        <TextInputComponent Label="Password" @bind-Value="CredentialsModel.Password" ValidationFor="@(() => CredentialsModel.Password)" IsPrivate=true AcceptNumber=true/>
+        <TextInputComponent Label="Confirm Password" @bind-Value="CredentialsModel.ConfirmPassword" ValidationFor="@(() => CredentialsModel.ConfirmPassword)" IsPrivate=true AcceptNumber=true/>
+    </FormContainerComponent>
+        @if(EditMode)
+        {
+            <ProgressButtonComponents OnClick="@Navigate" SubmitBtnName="Save"/>
+        }
+        else
+        {
+            <ProgressButtonComponents CanGoBack=true PreviousStep="@GoBackEvent" OnClick="@OnSubmit"/>
+        }
+</EditForm>
+
+@code
+{
+    [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    CredentialsModel CredentialsModel = new CredentialsModel();
+    private string? showIfInvalid = "display: none";
+    private void showValidation() => showIfInvalid = "display: block";
+    private bool EditMode = false;
+    public void Navigate()
+    {
+            dispatcher.Dispatch(new LoginDetailsAction(
+                username: CredentialsModel.Username!,
+                password: CredentialsModel.Password!,
+                confirmPassword: CredentialsModel.ConfirmPassword!
+            ));
+         Navigation.NavigateTo("validate");
+    }
+    private void OnSubmit()
+    {
+        dispatcher.Dispatch(new LoginDetailsAction(
+         username: CredentialsModel.Username!,
+         password: CredentialsModel.Password!,
+         confirmPassword: CredentialsModel.ConfirmPassword!
+        ));
+    }
+    protected override void OnInitialized()
+    {
+        CredentialsModel.Username = LoginDetails.Value.Username;
+        CredentialsModel.Password = LoginDetails.Value.Password;
+        CredentialsModel.ConfirmPassword = LoginDetails.Value.ConfirmPassword;
+
+        var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("edit", out var _product))
+            {
+                EditMode = true;
+            }
+    }
+}

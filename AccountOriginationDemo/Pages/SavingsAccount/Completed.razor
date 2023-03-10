@@ -1,0 +1,191 @@
+@page "/completed"
+@inject IState<BasicInformationState> BasicInformation
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.WebUtilities
+
+
+<Title
+    Header="Add Someone To Your Account"
+    Description="You're almost done! You have the option to add a someone to this account before we finish this up. "
+/>
+
+     <EditForm Model="JointMemberModel">
+        @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT BELOW *@
+        <InputContainerComponent FieldLabelText="Would you add a joint member to this account?">
+            <InputRadioGroup @bind-Value="JointMemberModel.JointMemberOption">
+                @foreach(var jointMember in JointMemberOptions.ListOfJointMemberOptions())
+                {
+                    <div>
+                        <InputRadio Value="jointMember.Name" id="@jointMember.Name"/>
+                        <label for="@jointMember.Name" style="font-size: 14px">@jointMember.Name</Label>
+                    </div>
+                }
+            </InputRadioGroup>
+            <CustomValidationMessage For="@(() => JointMemberModel.JointMemberOption)"/>
+        </InputContainerComponent>
+        @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT ABOVE *@
+
+    @if (JointMemberModel.JointMemberOption == "Yes")
+    {
+        <FormContainerComponent>
+            <TextInputComponent Label="First Name" @bind-Value="JointMemberModel.JointFirstName" ValidationFor="@(() => JointMemberModel.JointFirstName)"/>
+            <TextInputComponent Label="Last Name" @bind-Value="JointMemberModel.JointLastName" ValidationFor="@(() => JointMemberModel.JointLastName)"/>
+            @* REPLACE SSN WITH EMAIL *@
+            <MaskInputComponent
+                Label="Serial Security Number"
+                @bind-Value="JointMemberModel.JointSSN"
+                ValidationFor="@(() => JointMemberModel.JointSSN)"
+                IsPrivate=true
+                data-mask="000-00-0000"
+                placeholder="SSN"
+            />
+            @* NEED TO DESIGN CUSTOM DATE COMPONENT BELOW *@
+            <InputContainerComponent FieldLabelText="Date of Birth">
+                <InputDate @bind-Value="JointMemberModel.JointDateOfBirth" class="input-style date-input"/>
+                <CustomValidationMessage For="@(() => JointMemberModel.JointDateOfBirth)"/>
+            </InputContainerComponent>
+            @* NEED TO DESIGN CUSTOM DATE COMPONENT ABOVE *@
+        </FormContainerComponent>
+
+        <AutoCompleteAddressComponent Label="Residential Address" @bind-Value="JointMemberModel.JointMailingAddress.Address" ValidationFor="@(() => JointMemberModel.JointMailingAddress.Address)" OnFocusOut="HasChanged" />
+        <TwoColumnContainerComponent>
+            <TextInputComponent Label="Address Line 2 (Apt, Suite)" @bind-Value="JointMemberModel.JointMailingAddress.LineTwoAddress" ValidationFor="@(() => JointMemberModel.JointMailingAddress.LineTwoAddress)"/>
+            <TextInputComponent Label="Residential City" @bind-Value="JointMemberModel.JointMailingAddress.City" ValidationFor="@(() => JointMemberModel.JointMailingAddress.City)"/>
+        </TwoColumnContainerComponent>
+        <TwoColumnContainerComponent>
+            @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT BELOW *@
+            <InputContainerComponent FieldLabelText="Residential State">
+                <InputSelect class="dropdown-style" @bind-Value="JointMemberModel.JointMailingAddress.State" >
+                    @foreach (var state in StateData.ListStates())
+                    {
+                        <option value="@state.Name">@state.Name</option>
+                    }
+                </InputSelect>
+                <CustomValidationMessage For="@(() => JointMemberModel.JointMailingAddress.State)"/>
+            </InputContainerComponent>
+            @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT ABOVE *@
+            <NumberInputComponent Label="Residential Zip Code" @bind-Value="JointMemberModel.JointMailingAddress.Zip" ValidationFor="@(() => JointMemberModel.JointMailingAddress.Zip)" MaxNumber="5"/>
+        </TwoColumnContainerComponent>
+
+        <div class="checkbox-options">
+            <InputRadioGroup @bind-Value="JointMemberModel.JointCitizenship!.CurrentStatus">
+                <p class="label-spacing label-title">Please indicate your current status?</p>
+                @foreach (var option in CitizenshipStatusOptions.ListOfCitizenshipOptions())
+                {
+                    <div class="label-spacing">
+                        <InputRadio Value="option.Values" id="@option.Values"/>
+                        <label for="@option.Values" style="font-size: 14px" >@option.Name</Label>
+                    </div>
+                }
+            </InputRadioGroup>
+        </div>
+        @if (JointMemberModel.JointCitizenship!.CurrentStatus is not null && JointMemberModel.JointCitizenship!.CurrentStatus != "US Citizen")
+        {
+            <div class="checkbox-options">
+                <InputRadioGroup @bind-Value="JointMemberModel.JointCitizenship!.PoliticallyExposed">
+                    <p class="label-spacing label-title">Are you a politically exposed person (PEP)?</p>
+                    @foreach (var option in CitizenshipStatusOptions.ListOfExposedOptions())
+                    {
+                        <div class="label-spacing">
+                            <InputRadio Value="option.Values" id="@option.Values" />
+                            <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+            <div class="checkbox-options">
+                <InputRadioGroup @bind-Value="JointMemberModel.JointCitizenship!.FamilyMemberPoliticallyExposed">
+                    <p class="label-spacing label-title">Are you a close associate or family member of a politically exposed person (PEP)?</p>
+                    @foreach (var option in CitizenshipStatusOptions.ListOfFamilyExposedOptions())
+                    {
+                        <div class="label-spacing">
+                            <InputRadio Value="option.Values" id="@option.Values"/>
+                            <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+            <div class="checkbox-options">
+                <InputRadioGroup @bind-Value="JointMemberModel.JointCitizenship!.LiveInForeignCountry">
+                    <p class="label-spacing label-title">Do you live in a foreign country?</p>
+                    @foreach (var option in CitizenshipStatusOptions.ListOfForeignCountryOptions())
+                    {
+                        <div class="label-spacing" >
+                            <InputRadio Value="option.Values" id="@option.Values"/>
+                            <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+            <div class="checkbox-options">
+                <InputRadioGroup @bind-Value="JointMemberModel.JointCitizenship!.IsCitizenOfForeignCountry">
+                    <p class="label-spacing label-title">Are you a citizen of a foreign country?</p>
+                    @foreach (var option in CitizenshipStatusOptions.ListOfCitizenOfForeignCountryOptions())
+                    {
+                        <div class="label-spacing">
+                            <InputRadio Value="option.Values" id="@option.Values"/>
+                            <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+            @if (JointMemberModel.JointCitizenship!.IsCitizenOfForeignCountry == "yesCitizenOfForeignCountry")
+            {
+                <FormContainerComponent>
+                    <InputContainerComponent FieldLabelText="Select the country of your citizenship?">
+                        <InputSelect class="dropdown-style" @bind-Value="JointMemberModel.JointCitizenship!.CountryOfForeignCitizenship" style="max-width: 528px" >
+                            @foreach (var option in CitizenshipStatusOptions.ListOfForeignCountries())
+                            {
+                                <option value="@option.Name">@option.Name</option>
+                            }
+                        </InputSelect>
+                    </InputContainerComponent>
+                </FormContainerComponent>
+            }
+
+        }
+
+    }
+
+    </EditForm>
+
+        @if(EditMode)
+        {
+            <ProgressButtonComponents OnClick="@Navigate" SubmitBtnName="Save"/>
+        }
+        else
+        {
+            <ProgressButtonComponents CanGoBack="true" PreviousStep="@GoBackEvent" OnClick="@EventAfterSubmit"/>
+        }
+
+@code
+{
+    StateData StateData = new StateData();
+    CitizenshipStatusOptions CitizenshipStatusOptions = new CitizenshipStatusOptions();
+
+    private void HasChanged() => newAddress = true;
+
+    private bool newAddress { get; set; } = false;
+    private bool EditMode = false;
+
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    JointMemberModel JointMemberModel = new JointMemberModel();
+    JointMemberOptions JointMemberOptions = new JointMemberOptions();
+
+    protected override void OnInitialized()
+    {
+        var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("edit", out var _product))
+            {
+                EditMode = true;
+            }
+    }
+
+    public void Navigate()
+    {
+         Navigation.NavigateTo("validate");
+    }
+
+}

@@ -1,0 +1,60 @@
+@page "/dashboard"
+@inject NavigationManager Navigation;
+
+<div style="display: flex; justify-content: center; position: relative; top: -50px;">
+    <LargeCardComponent
+        CardTitle="Open a Checking Account"
+        CardDescription="Let's us help you open your new PSECU checking account"
+        MoreDescription="Here you can setup a checking account and debit card! We'll need a initial setup fund (min $5) to open it."
+        OnClick="Navigator"
+    />
+</div>
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: clamp(1rem, 4vw, 2rem);   font-weight: 700">
+    <p>Congratulations, you are now a member!</p>
+    <p>Check out our products and latest offers!</p>
+</div>
+
+<div style="display: flex; margin: 10px; flex-wrap: wrap; justify-content: center;">
+    <CardComponent
+        FaIconName="fa-people-arrows"
+        CardTitle="Add Someone to Your Account"
+        CardDescription="Let's add an additional person to your account"
+        MoreDescription="They will need complete their own version of the application and we'll handle the rest. "
+        OnClick="@showModal"
+    />
+    <CardComponent
+        FaIconName="fa-sack-dollar"
+        CardTitle="Open a Checking Account"
+        CardDescription="Let's us help you open your new PSECU checking account"
+        MoreDescription="Here you can setup a checking account and debit card! We'll need a initial setup fund (min $5) to open it."
+        OnClick="Navigator"
+    />
+    <CardComponent
+        FaIconName="fa-credit-card"
+        CardTitle="Apply for a Credit Card"
+        CardDescription="Let's get you started with a credit card."
+    />
+    <CardComponent
+        FaIconName="fa-car"
+        CardTitle="Apply for a Auto Loan"
+        CardDescription="Let's get you started with an auto loan for your new car."
+    />
+
+</div>
+<div style="text-align: center; padding: 10px 0px;">
+    <a href="#" style="color: #177D78">View all products and services ></a>
+</div>
+<Modal ShowModal=@ShowModal ModalEvents="@closeModal" ModalTitle="Send link to the person you want to add" ShowModalCloseBtn=false>
+    <SendSMSComponent GoBackEvent="@closeModal" />
+</Modal>
+
+@code
+{
+
+    private void Navigator() =>  Navigation.NavigateTo("fundaccount");
+    private void NaviData() => Navigation.NavigateTo("data");
+    private bool ShowModal { get; set; } = false;
+    private void closeModal() => ShowModal = false;
+    private void showModal() => ShowModal = true;
+
+}

@@ -1,0 +1,57 @@
+@inject NavigationManager Navigation;
+
+<div class="collapsable-container">
+    <div class="collapsable">
+        <div class="title-container" @onclick="@Toggle">
+            @Title
+            @if (Collapsed)
+            {
+                <i class="fa-solid fa-circle-plus"></i>
+            }
+            else
+            {
+                <i class="fa-solid fa-circle-minus"></i>
+            }
+        </div>
+        @if (!string.IsNullOrEmpty(Value))
+        {
+        <div class="value">
+            <h4><span class="badge badge-success">@Value</span></h4>
+        </div>
+        }
+    </div>
+
+    @if (!Collapsed)
+    {
+        <div class="collapsable-panel">
+            <div class="edit-btn-container" @onclick="NavigateTo">
+                <div></div>
+                <div class="edit-btn-box">
+                    <span class="edit-btn-text">Edit</span>
+                    <i class="fa-solid fa-pencil" style=" font-size: 14px"></i>
+                </div>
+            </div>
+            @ChildContent
+        </div>
+    }
+</div>
+
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public bool Collapsed { get; set; }
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public string? Value { get; set; }
+    [Parameter] public string? GoToEditLocation { get; set; }
+    private void NavigateTo()
+    {
+        Navigation.NavigateTo(GoToEditLocation!);
+    }
+
+    void Toggle()
+    {
+        Collapsed = !Collapsed;
+    }
+
+
+}

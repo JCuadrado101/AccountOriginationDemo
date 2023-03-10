@@ -1,0 +1,313 @@
+@using Microsoft.AspNetCore.Components
+@inject IJSRuntime JSRuntime
+@inject IState<AddressInformationState> AddressInformation
+@inject IDispatcher dispatcher
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.WebUtilities
+
+@page "/moreinformation"
+
+<div @onmousemove="SetInformation" @ontouchmove="SetInformation">
+    <Title
+    Header="More Information"
+    Description="We need more information to complete you application"
+    />
+
+    <EditForm Model="@MoreInformationModel" OnInvalidSubmit="@showValidation" OnValidSubmit="@EventAfterSubmit"  >
+        <ObjectGraphDataAnnotationsValidator />
+        <CustomValidationAlertContainer Styling="@showIfInvalid">
+            <CustomValidationMessage For="@(() => MoreInformationModel.ResidentialAddress)" isValidationSummary="true"/>
+            <CustomValidationMessage For="@(() => MoreInformationModel.City)" isValidationSummary="true"/>
+            <CustomValidationMessage For="@(() => MoreInformationModel.State)" isValidationSummary="true"/>
+            <CustomValidationMessage For="@(() => MoreInformationModel.Zip)" isValidationSummary="true"/>
+        </CustomValidationAlertContainer>
+        <FormContainerComponent>
+            <AutoCompleteAddressComponent Label="Residential Address" @bind-Value="MoreInformationModel.ResidentialAddress" ValidationFor="@(() => MoreInformationModel.ResidentialAddress)" OnFocusOut="HasChanged" />
+            <TwoColumnContainerComponent>
+                <TextInputComponent Label="Address Line 2 (Apt, Suite)" @bind-Value="MoreInformationModel.LineTwoAddress" ValidationFor="@(() => MoreInformationModel.LineTwoAddress)"/>
+                <TextInputComponent Label="Residential City" @bind-Value="MoreInformationModel.City" ValidationFor="@(() => MoreInformationModel.City)"/>
+            </TwoColumnContainerComponent>
+            <TwoColumnContainerComponent>
+                @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT BELOW *@
+                <InputContainerComponent FieldLabelText="Residential State">
+                    <InputSelect class="dropdown-style" @bind-Value="MoreInformationModel.State" >
+                        @foreach(var state in StateData.ListStates())
+                        {
+                            <option value="@state.Name">@state.Name</option>
+                        }
+                    </InputSelect>
+                    <CustomValidationMessage For="@(() => MoreInformationModel.State)"/>
+                </InputContainerComponent>
+                @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT ABOVE *@
+                <NumberInputComponent Label="Residential Zip Code" @bind-Value="MoreInformationModel.Zip" ValidationFor="@(() => MoreInformationModel.Zip)" MaxNumber="5"/>
+            </TwoColumnContainerComponent>
+            <div class="checkbox-options">
+                <InputRadioGroup @bind-Value="MoreInformationModel.Citizenship!.CurrentStatus">
+                <p class="label-spacing label-title">Please indicate your current status?</p>
+                    @foreach(var option in CitizenshipStatusOptions.ListOfCitizenshipOptions())
+                    {
+                        <div class="label-spacing">
+                            <InputRadio Value="option.Values" id="@option.Values"/>
+                            <label for="@option.Values" style="font-size: 14px" >@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+            @if(MoreInformationModel.Citizenship!.CurrentStatus is not null && MoreInformationModel.Citizenship!.CurrentStatus != "US Citizen")
+        {
+        <div class="checkbox-options">
+            <InputRadioGroup @bind-Value="MoreInformationModel.Citizenship.PoliticallyExposed">
+            <p class="label-spacing label-title">Are you a politically exposed person (PEP)?</p>
+                @foreach(var option in CitizenshipStatusOptions.ListOfExposedOptions())
+                {
+                    <div class="label-spacing">
+                        <InputRadio Value="option.Values" id="@option.Values" />
+                        <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                    </div>
+                }
+            </InputRadioGroup>
+        </div>
+        <div class="checkbox-options">
+            <InputRadioGroup @bind-Value="MoreInformationModel.Citizenship.FamilyMemberPoliticallyExposed">
+            <p class="label-spacing label-title">Are you a close associate or family member of a politically exposed person (PEP)?</p>
+                @foreach(var option in CitizenshipStatusOptions.ListOfFamilyExposedOptions())
+                {
+                    <div class="label-spacing">
+                        <InputRadio Value="option.Values" id="@option.Values"/>
+                        <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                    </div>
+                }
+            </InputRadioGroup>
+        </div>
+        <div class="checkbox-options">
+            <InputRadioGroup @bind-Value="MoreInformationModel.Citizenship.LiveInForeignCountry">
+            <p class="label-spacing label-title">Do you live in a foreign country?</p>
+                @foreach(var option in CitizenshipStatusOptions.ListOfForeignCountryOptions())
+                {
+                    <div class="label-spacing" >
+                        <InputRadio Value="option.Values" id="@option.Values"/>
+                        <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                    </div>
+                }
+            </InputRadioGroup>
+        </div>
+        <div class="checkbox-options">
+            <InputRadioGroup @bind-Value="MoreInformationModel.Citizenship.IsCitizenOfForeignCountry">
+            <p class="label-spacing label-title">Are you a citizen of a foreign country?</p>
+                @foreach(var option in CitizenshipStatusOptions.ListOfCitizenOfForeignCountryOptions())
+                {
+                    <div class="label-spacing">
+                        <InputRadio Value="option.Values" id="@option.Values"/>
+                        <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                    </div>
+                }
+            </InputRadioGroup>
+        </div>
+        @if(MoreInformationModel.Citizenship.IsCitizenOfForeignCountry == "yesCitizenOfForeignCountry")
+        {
+        <FormContainerComponent>
+        <InputContainerComponent FieldLabelText="Select the country of your citizenship?">
+            <InputSelect class="dropdown-style" @bind-Value="MoreInformationModel.Citizenship.CountryOfForeignCitizenship" style="max-width: 528px" >
+                @foreach(var option in CitizenshipStatusOptions.ListOfForeignCountries())
+                {
+                    <option value="@option.Name">@option.Name</option>
+                }
+            </InputSelect>
+        </InputContainerComponent>
+        </FormContainerComponent>
+        }
+
+    }
+          @* NEED TO DESIGN CUSTOM CHECKBOX COMPONENT BELOW *@
+            <div class="single-checkbox">
+                <InputCheckbox id="MailingAddress" @bind-Value="@MoreInformationModel.IsMailingSameAsResidential"/>
+                <label For="MailingAddress" class="mailing-label">Mailing address is the same as my residential address</Label>
+            </div>
+            @* NEED TO DESIGN CUSTOM CHECKBOX COMPONENT ABOVE *@
+
+            @if(!MoreInformationModel.IsMailingSameAsResidential)
+            {
+                <div style="padding-top: 20px" @onmousemove="SetMailingAddress">
+                    <CustomValidationAlertContainer Styling="@showIfInvalid">
+                        <CustomValidationMessage For="@(() => MoreInformationModel.MailingAddress!.Address)" isValidationSummary="true"/>
+                        <CustomValidationMessage For="@(() => MoreInformationModel.MailingAddress!.City)" isValidationSummary="true"/>
+                        <CustomValidationMessage For="@(() => MoreInformationModel.MailingAddress!.State)" isValidationSummary="true"/>
+                        <CustomValidationMessage For="@(() => MoreInformationModel.MailingAddress!.Zip)" isValidationSummary="true"/>
+                    </CustomValidationAlertContainer>
+                    <AutoCompleteAddressComponent Label="Mailing Address" @bind-Value="MoreInformationModel.MailingAddress!.Address" ValidationFor="@(() => MoreInformationModel.MailingAddress!.Address)" OnFocusOut="MailingAddressHasChanged" isMailingAddress=true/>
+                    <TwoColumnContainerComponent>
+                        <TextInputComponent Label="Mailing Address Line 2 (Apt, Suite)" @bind-Value="MoreInformationModel.MailingAddress!.LineTwoAddress" ValidationFor="@(() => MoreInformationModel.LineTwoAddress)"/>
+                        <TextInputComponent Label="Mailing City" @bind-Value="MoreInformationModel.MailingAddress!.City" ValidationFor="@(() => MoreInformationModel.City)"/>
+                    </TwoColumnContainerComponent>
+                    <TwoColumnContainerComponent>
+                        @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT BELOW *@
+                        <InputContainerComponent FieldLabelText="Mailing State">
+                            <InputSelect class="dropdown-style" @bind-Value="MoreInformationModel.MailingAddress!.State" >
+                                @foreach(var state in StateData.ListStates())
+                                {
+                                    <option value="@state.Name">@state.Name</option>
+                                }
+                            </InputSelect>
+                            <CustomValidationMessage For="@(() => MoreInformationModel.MailingAddress.State)"/>
+                        </InputContainerComponent>
+                        @* NEED TO DESIGN CUSTOM DROPDOWN COMPONENT ABOVE *@
+                        <NumberInputComponent Label="Mailing Zip Code" @bind-Value="MoreInformationModel.MailingAddress!.Zip" ValidationFor="@(() => MoreInformationModel.City)" MaxNumber="5"/>
+                    </TwoColumnContainerComponent>
+                </div>
+            }
+
+        </FormContainerComponent>
+        @if(EditMode)
+            {
+                <ProgressButtonComponents OnClick="@Navigate" SubmitBtnName="Save"/>
+            }
+            else
+            {
+                <LoadingButtonComponent isVerifying="Verifying" OnClick="OnSubmit" PreviousStep="@GoBackEvent"  />
+            }
+
+
+    </EditForm>
+</div>
+
+@code
+{
+
+    private bool Verifying = false;
+    private bool EditMode = false;
+
+    StateData StateData = new StateData();
+    CreateApplicationApi CreateApplicationApi = new CreateApplicationApi();
+    CitizenshipStatusOptions CitizenshipStatusOptions = new CitizenshipStatusOptions();
+    [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    [Parameter] public EventCallback GoBackEvent { get; set; }
+    MoreInformationModel MoreInformationModel = new MoreInformationModel();
+    private string? showIfInvalid = "display: none";
+    private void showValidation() {
+         showIfInvalid = "display: block";
+
+    }
+    private bool newAddress { get; set; } = false;
+    private bool newMailingAddress { get; set; } = false;
+
+    private int timer = 2;
+    private void RunAPI()
+    {
+        Verifying = true;
+
+        var superString = CreateApplicationApi.CreateApplication();
+        Console.WriteLine(superString);
+
+    }
+
+    public void Navigate()
+    {
+        dispatcher.Dispatch(new AddressInformationAction(
+            residentialAddress: MoreInformationModel.ResidentialAddress!,
+            residentialCity: MoreInformationModel.City!,
+            residentialState: MoreInformationModel.State!,
+            residentialZipCode: MoreInformationModel.Zip!,
+            isMailingSameAsResidential: MoreInformationModel.IsMailingSameAsResidential!,
+            mailingAddress: MoreInformationModel!.MailingAddress!.Address!,
+            mailingCity: MoreInformationModel!.MailingAddress!.City!,
+            mailingState: MoreInformationModel!.MailingAddress!.State!,
+            mailingZipCode: MoreInformationModel!.MailingAddress!.Zip!,
+            currentStatus: MoreInformationModel!.Citizenship!.CurrentStatus!,
+            politicallyExposed: MoreInformationModel!.Citizenship.PoliticallyExposed!,
+            familyMemberPoliticallyExposed: MoreInformationModel!.Citizenship.FamilyMemberPoliticallyExposed!,
+            liveInForeignCountry: MoreInformationModel!.Citizenship.LiveInForeignCountry!,
+            isCitizenOfForeignCountry: MoreInformationModel!.Citizenship.IsCitizenOfForeignCountry!,
+            countryOfForeignCitizenship: MoreInformationModel!.Citizenship.CountryOfForeignCitizenship!
+            )
+        );
+        Navigation.NavigateTo("validate");
+    }
+
+    [JSInvokable]
+    public async Task SetInformation()
+    {
+        var address = await JSRuntime.InvokeAsync<string>("getAddress");
+
+        if(MoreInformationModel.ResidentialAddress != address)
+        {
+            MoreInformationModel.ResidentialAddress = await JSRuntime.InvokeAsync<string>("getAddress");
+            MoreInformationModel.City = await JSRuntime.InvokeAsync<string>("getCity");
+            MoreInformationModel.State = await JSRuntime.InvokeAsync<string>("getState");
+            MoreInformationModel.Zip = await JSRuntime.InvokeAsync<string>("getZipCode");
+        }
+    }
+
+    [JSInvokable]
+    public async Task SetMailingAddress()
+    {
+        var city =  await JSRuntime.InvokeAsync<string>("getMailCity");
+
+        if(MoreInformationModel.MailingAddress!.City != city)
+        {
+            MoreInformationModel.MailingAddress!.Address = await JSRuntime.InvokeAsync<string>("getMailAddress");
+            MoreInformationModel.MailingAddress!.City = await JSRuntime.InvokeAsync<string>("getMailCity");
+            MoreInformationModel.MailingAddress!.State = await JSRuntime.InvokeAsync<string>("getMailState");
+            MoreInformationModel.MailingAddress!.Zip = await JSRuntime.InvokeAsync<string>("getMailZipCode");
+        }
+    }
+
+    private void MailingAddressHasChanged()
+    {
+        newMailingAddress = true;
+    }
+
+    private void HasChanged()
+    {
+        newAddress = true;
+    }
+
+         protected override void OnInitialized()
+        {
+            MoreInformationModel.ResidentialAddress = AddressInformation.Value.ResidentialAddress;
+            MoreInformationModel.City = AddressInformation.Value.ResidentialCity;
+            MoreInformationModel.State = AddressInformation.Value.ResidentialState;
+            MoreInformationModel.Zip = AddressInformation.Value.ResidentialZipCode;
+            MoreInformationModel.IsMailingSameAsResidential = AddressInformation.Value.IsMailingSameAsResidential;
+
+            MoreInformationModel.MailingAddress!.Address = AddressInformation.Value.MailingAddress;
+            MoreInformationModel.MailingAddress!.City = AddressInformation.Value.MailingCity;
+            MoreInformationModel.MailingAddress!.State = AddressInformation.Value.MailingState;
+            MoreInformationModel.MailingAddress!.Zip = AddressInformation.Value.MailingZipCode;
+
+            var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+
+            if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("edit", out var _product))
+                {
+                    EditMode = true;
+                }
+            }
+
+        private void OnSubmit()
+        {
+        if(MoreInformationModel.IsMailingSameAsResidential)
+        {
+            MoreInformationModel!.MailingAddress!.Address = MoreInformationModel.ResidentialAddress;
+            MoreInformationModel!.MailingAddress!.City = MoreInformationModel.City;
+            MoreInformationModel!.MailingAddress!.State = MoreInformationModel.State;
+            MoreInformationModel!.MailingAddress!.Zip = MoreInformationModel.Zip;
+        }
+        dispatcher.Dispatch(new AddressInformationAction(
+            residentialAddress: MoreInformationModel.ResidentialAddress!,
+            residentialCity: MoreInformationModel.City!,
+            residentialState: MoreInformationModel.State!,
+            residentialZipCode: MoreInformationModel.Zip!,
+            isMailingSameAsResidential: MoreInformationModel.IsMailingSameAsResidential!,
+            mailingAddress: MoreInformationModel!.MailingAddress!.Address!,
+            mailingCity: MoreInformationModel!.MailingAddress!.City!,
+            mailingState: MoreInformationModel!.MailingAddress!.State!,
+            mailingZipCode: MoreInformationModel!.MailingAddress!.Zip!,
+            currentStatus: MoreInformationModel!.Citizenship!.CurrentStatus!,
+            politicallyExposed: MoreInformationModel!.Citizenship.PoliticallyExposed!,
+            familyMemberPoliticallyExposed: MoreInformationModel!.Citizenship.FamilyMemberPoliticallyExposed!,
+            liveInForeignCountry: MoreInformationModel!.Citizenship.LiveInForeignCountry!,
+            isCitizenOfForeignCountry: MoreInformationModel!.Citizenship.IsCitizenOfForeignCountry!,
+            countryOfForeignCitizenship: MoreInformationModel!.Citizenship.CountryOfForeignCitizenship!
+            )
+        );
+    }
+}

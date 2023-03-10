@@ -1,0 +1,23 @@
+
+
+
+<DividerComponent BorderStyling="margin-top: 40px;"/>
+<div class="btn-container">
+    <div class="btn-content-container">
+        <input type="button" id="back" value="Back" onclick=@PreviousStep/>
+        <button class="buttonload" id="continue" @onclick="OnClick" style="margin-top: 20px;">
+            <i class="@LoadingAnimation()"></i> @ButtonText()
+        </button>
+    </div>
+</div>
+
+@code
+{
+    [Parameter] public bool isVerifying { get; set; }
+    [Parameter] public EventCallback OnClick { get; set; }
+    [Parameter] public EventCallback? PreviousStep { get; set; }
+
+
+    private string ButtonText() => isVerifying ? "Verifying" : "Verify";
+    private string LoadingAnimation() => isVerifying ? "fa fa-spinner fa-spin" : "";
+}

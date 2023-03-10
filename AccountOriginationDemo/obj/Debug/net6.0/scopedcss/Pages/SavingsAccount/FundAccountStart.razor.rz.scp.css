@@ -1,0 +1,333 @@
+.form-container .field-container:first-of-type[b-lki39z23ls] {
+    grid-area: name;
+}
+
+.form-container .field-container:nth-of-type(2)[b-lki39z23ls] {
+    grid-area: number;
+}
+
+.form-container .field-container:nth-of-type(3)[b-lki39z23ls] {
+    grid-area: expiration;
+}
+
+.form-container .field-container:nth-of-type(4)[b-lki39z23ls] {
+    grid-area: security;
+}
+
+.field-container input[b-lki39z23ls] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.field-container[b-lki39z23ls] {
+    position: relative;
+}
+
+.form-container[b-lki39z23ls] {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 90px 90px 90px;
+    grid-template-areas: "name name""number number""expiration security";
+    max-width: 400px;
+    padding: 20px;
+    color: #707070;
+    margin: 0 auto;
+}
+
+label[b-lki39z23ls] {
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+input[b-lki39z23ls] {
+    margin-top: 3px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+}
+
+.ccicon[b-lki39z23ls] {
+    height: 38px;
+    position: absolute;
+    right: 6px;
+    top: calc(78% - 14px);
+    right: calc(23%);
+    width: 60px;
+    display: none;
+}
+
+/* CREDIT CARD IMAGE STYLING */
+.preload *[b-lki39z23ls] {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+.container[b-lki39z23ls] {
+    width: 100%;
+    max-width: 400px;
+    max-height: 251px;
+    height: 54vw;
+    padding: 20px;
+}
+
+#ccsingle[b-lki39z23ls] {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+#ccsingle svg[b-lki39z23ls] {
+    width: 100px;
+    max-height: 60px;
+}
+
+.creditcard svg#cardfront[b-lki39z23ls],
+.creditcard svg#cardback[b-lki39z23ls] {
+    width: 100%;
+    -webkit-box-shadow: 1px 5px 6px 0px black;
+    box-shadow: 1px 5px 6px 0px black;
+    border-radius: 22px;
+}
+
+#generatecard[b-lki39z23ls]{
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    color: #fff;
+    padding: 2px 4px;
+    background-color: #909090;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+}
+
+/* CHANGEABLE CARD ELEMENTS */
+.creditcard .lightcolor[b-lki39z23ls],
+.creditcard .darkcolor[b-lki39z23ls] {
+    -webkit-transition: fill .5s;
+    transition: fill .5s;
+}
+
+.creditcard .lightblue[b-lki39z23ls] {
+    fill: #03A9F4;
+}
+
+.creditcard .lightbluedark[b-lki39z23ls] {
+    fill: #0288D1;
+}
+
+.creditcard .red[b-lki39z23ls] {
+    fill: #ef5350;
+}
+
+.creditcard .reddark[b-lki39z23ls] {
+    fill: #d32f2f;
+}
+
+.creditcard .purple[b-lki39z23ls] {
+    fill: #ab47bc;
+}
+
+.creditcard .purpledark[b-lki39z23ls] {
+    fill: #7b1fa2;
+}
+
+.creditcard .cyan[b-lki39z23ls] {
+    fill: #26c6da;
+}
+
+.creditcard .cyandark[b-lki39z23ls] {
+    fill: #0097a7;
+}
+
+.creditcard .green[b-lki39z23ls] {
+    fill: #66bb6a;
+}
+
+.creditcard .greendark[b-lki39z23ls] {
+    fill: #388e3c;
+}
+
+.creditcard .lime[b-lki39z23ls] {
+    fill: #d4e157;
+}
+
+.creditcard .limedark[b-lki39z23ls] {
+    fill: #afb42b;
+}
+
+.creditcard .yellow[b-lki39z23ls] {
+    fill: #ffeb3b;
+}
+
+.creditcard .yellowdark[b-lki39z23ls] {
+    fill: #f9a825;
+}
+
+.creditcard .orange[b-lki39z23ls] {
+    fill: #ff9800;
+}
+
+.creditcard .orangedark[b-lki39z23ls] {
+    fill: #ef6c00;
+}
+
+.creditcard .grey[b-lki39z23ls] {
+    fill: #bdbdbd;
+}
+
+.creditcard .greydark[b-lki39z23ls] {
+    fill: #616161;
+}
+
+/* FRONT OF CARD */
+#svgname[b-lki39z23ls] {
+    text-transform: uppercase;
+}
+
+#cardfront .st2[b-lki39z23ls] {
+    fill: #FFFFFF;
+}
+
+#cardfront .st3[b-lki39z23ls] {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
+
+#cardfront .st4[b-lki39z23ls] {
+    font-size: 54.7817px;
+}
+
+#cardfront .st5[b-lki39z23ls] {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+#cardfront .st6[b-lki39z23ls] {
+    font-size: 33.1112px;
+}
+
+#cardfront .st7[b-lki39z23ls] {
+    opacity: 0.6;
+    fill: #FFFFFF;
+}
+
+#cardfront .st8[b-lki39z23ls] {
+    font-size: 24px;
+}
+
+#cardfront .st9[b-lki39z23ls] {
+    font-size: 36.5498px;
+}
+
+#cardfront .st10[b-lki39z23ls] {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+}
+
+#cardfront .st11[b-lki39z23ls] {
+    font-size: 16.1716px;
+}
+
+#cardfront .st12[b-lki39z23ls] {
+    fill: #4C4C4C;
+}
+
+/* BACK OF CARD */
+#cardback .st0[b-lki39z23ls] {
+    fill: none;
+    stroke: #0F0F0F;
+    stroke-miterlimit: 10;
+}
+
+#cardback .st2[b-lki39z23ls] {
+    fill: #111111;
+}
+
+#cardback .st3[b-lki39z23ls] {
+    fill: #F2F2F2;
+}
+
+#cardback .st4[b-lki39z23ls] {
+    fill: #D8D2DB;
+}
+
+#cardback .st5[b-lki39z23ls] {
+    fill: #C4C4C4;
+}
+
+#cardback .st6[b-lki39z23ls] {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+#cardback .st7[b-lki39z23ls] {
+    font-size: 27px;
+}
+
+#cardback .st8[b-lki39z23ls] {
+    opacity: 0.6;
+}
+
+#cardback .st9[b-lki39z23ls] {
+    fill: #FFFFFF;
+}
+
+#cardback .st10[b-lki39z23ls] {
+    font-size: 24px;
+}
+
+#cardback .st11[b-lki39z23ls] {
+    fill: #EAEAEA;
+}
+
+#cardback .st12[b-lki39z23ls] {
+    font-family: 'Rock Salt', cursive;
+}
+
+#cardback .st13[b-lki39z23ls] {
+    font-size: 37.769px;
+}
+
+/* FLIP ANIMATION */
+.container[b-lki39z23ls] {
+    perspective: 1000px;
+}
+
+.creditcard[b-lki39z23ls] {
+    width: 100%;
+    max-width: 400px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.6s;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    cursor: pointer;
+}
+
+.creditcard .front[b-lki39z23ls],
+.creditcard .back[b-lki39z23ls] {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    color: #47525d;
+}
+
+.creditcard .back[b-lki39z23ls] {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.creditcard.flipped[b-lki39z23ls] {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,33 @@
+@using System.Linq.Expressions
+@inject IJSRuntime JSRuntime;
+@inherits InputBase<string>
+
+<InputContainerComponent FieldLabelText="@Label">
+    <input class="input-style input-number phoneNumber @CssClass" @bind="@CurrentValue" style="border-radius: 3px;" type="@InputType" maxlength="@MaxNumber"/>
+    <CustomValidationMessage For="@ValidationFor"/>
+</InputContainerComponent>
+
+@code {
+    [Parameter, EditorRequired] public Expression<Func<string>> ValidationFor { get; set; } = default!;
+    [Parameter] public string? Label { get; set; }
+    [Parameter] public int? MaxNumber { get; set; }
+    private string? InputType { get; set; } 
+    protected override bool TryParseValueFromString(string? value, out string result, out string validationErrorMessage)
+    {
+        result = value!;
+        validationErrorMessage = null!;
+        return true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender) 
+    {
+        if(firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("addCommaToNumberInput");
+            await JSRuntime.InvokeVoidAsync("phoneNumberFormat");
+
+        }
+    }
+
+}
+

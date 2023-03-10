@@ -1,0 +1,44 @@
+<div class="modal-background" style="@ModalDisplay()">
+    <div class="modal-content">
+      <div>
+        <div class="modal-title-container">
+          <span class="modal-title">@ModalTitle</span>
+          <i class="fa-sharp fa-solid fa-xmark" @onclick="ModalEvents"></i>
+        </div>
+        <hr />
+      </div>
+      <div class="modal-description-container">
+        @ChildContent
+      </div>
+
+      @if(ShowModalCloseBtn == null)
+      {
+        <hr />
+        <ModalButtonComponent OnClick="@ModalEvents"/>
+      }
+      </div>
+  </div>
+
+  @code
+  {
+    [Parameter] public bool ShowModal { get; set; }
+    [Parameter] public EventCallback ModalEvents { get; set; }
+    [Parameter] public string? ModalTitle { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public bool? ShowModalCloseBtn { get; set; }
+
+    private string ModalDisplay()
+    {
+      if(ShowModal)
+      {
+        return "display: block";
+      }
+      else
+      {
+        return "display: none";
+      }
+    }
+
+
+
+  }

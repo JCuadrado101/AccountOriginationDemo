@@ -1,0 +1,60 @@
+@using System.Linq.Expressions
+@inject IJSRuntime JSRuntime;
+@inherits InputBase<string>
+
+
+<InputContainerComponent FieldLabelText="@Label">
+    <input 
+        id=@Id()
+        class="input-style @CssClass" 
+        value="@CurrentValue" 
+        style="border-radius: 3px;"
+        @onchange="OnFocusOut" 
+        >
+        <div class="form-control-validation">
+            <CustomValidationMessage For="@ValidationFor"/>
+        </div>
+</InputContainerComponent>
+
+@code {
+
+    [Parameter, EditorRequired] public Expression<Func<string>> ValidationFor { get; set; } = default!;
+    [Parameter] public string? Label { get; set; }
+    [Parameter] public EventCallback OnFocusOut { get; set; }
+    [Parameter] public bool? isMailingAddress { get; set; }
+    protected override bool TryParseValueFromString(string? value, out string result, out string validationErrorMessage)
+    {
+        result = value!;
+        validationErrorMessage = null!;
+        return true;
+    }
+
+    private string Id()
+    {
+        if(isMailingAddress == null)
+        {
+            return "autocomplete";
+        }
+        else 
+        {
+            return "autocompleteMail";
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender)
+        {
+            if(isMailingAddress == null)
+            {
+                await JSRuntime.InvokeVoidAsync("initializeAutocomplete", "autocomplete");
+            }
+            else
+            {
+                await JSRuntime.InvokeVoidAsync("initializeAutocompleteMail", "autocompleteMail");
+            }
+        }
+    }
+
+}
+

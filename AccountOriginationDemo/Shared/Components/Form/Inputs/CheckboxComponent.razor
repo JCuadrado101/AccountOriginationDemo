@@ -1,0 +1,9 @@
+<div style="padding: 10px 0; max-width: 700px; margin: 0 auto;">
+    <input @bind="@CurrentValue" style="border-radius: 3px;" type="checkbox"/>
+    <label For="MailingAddress" style="font-size: 14px">Mailing address is the same as my residential address</Label>
+</div>
+
+@code
+{
+    [Parameter] public bool CurrentValue { get; set; }
+}

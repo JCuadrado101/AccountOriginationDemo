@@ -2487,26 +2487,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jcuadrad\\.nuget\\packages\\": {}
+    "/Users/jordancuadrado/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
+      "projectUniqueName": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/Account-Origination-Demo.csproj",
       "projectName": "Account-Origination-Demo",
-      "projectPath": "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
-      "packagesPath": "C:\\Users\\jcuadrad\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\jcuadrad\\Documents\\AccountOriginationDemo\\obj\\",
+      "projectPath": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/Account-Origination-Demo.csproj",
+      "packagesPath": "/Users/jordancuadrado/.nuget/packages/",
+      "outputPath": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jcuadrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jordancuadrado/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2565,24 +2564,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.14, 6.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.14, 6.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.14, 6.0.14]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.14, 6.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2591,7 +2572,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -11,13 +11,11 @@
     @switch (WizardProgress())
     {
         case "1":
-                            <AddChecking GoBackEvents="PreviousStep" EventAfterSubmit="OnSuccessfulSubmit" />
-
+            <AddChecking GoBackEvents="PreviousStep" EventAfterSubmit="OnSuccessfulSubmit" />
             @* <GetStartedJoint EventAfterSubmit="OnSuccessfulSubmit"/> *@
         break;
         case "2":
-                    <AddChecking GoBackEvents="PreviousStep" EventAfterSubmit="OnSuccessfulSubmit" />
-
+            <AddChecking GoBackEvents="PreviousStep" EventAfterSubmit="OnSuccessfulSubmit" />
             @* <FundAccountStart EventAfterSubmit="OnSuccessfulSubmit" GoBackEvent="PreviousStep" /> *@
         break;
         default:

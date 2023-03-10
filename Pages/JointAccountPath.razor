@@ -1,6 +1,6 @@
-@* @page "/jointaccountpath";
+@page "/jointaccountpath";
 
-@inject IState<WizardFundingProgressState> WizardProgressStep
+@inject IState<WizardJointProgressState> WizardProgressStep
 @inject IDispatcher dispatcher
 @inject NavigationManager Navigation
 
@@ -37,7 +37,7 @@
     static private List<string> Steps = new List<string> { "1", "2", "3", "4", "5", "6", "7"};
     static private string CurrentStep = "1";
     private int currentIndex() => Steps.IndexOf(CurrentStep);
-    private void StoreStepIntoState() => dispatcher.Dispatch(new WizardFundingProgressAction( wizardFundingProgressStep: CurrentStep ));
+    private void StoreStepIntoState() => dispatcher.Dispatch(new WizardJointProgressAction( wizardFundingProgressStep: CurrentStep ));
     private string WizardProgress()
     {
         var CurrentProgressStep = WizardProgressStep.Value.WizardFundingProgressStep;
@@ -71,4 +71,4 @@
     }
 
     private void Navigate() => Navigation.NavigateTo("dashboard");
-} *@
+}

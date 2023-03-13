@@ -1,0 +1,120 @@
+@page "/addjointchecking"
+
+@inject IDispatcher dispatcher
+@inject IState<BasicInformationState> BasicInformation
+@inject IState<AddressInformationState> AddressInformation
+
+<Title
+    Header="Would you like to add checking and a debit card for the joint member?"
+    Description="We offer a Checking Account with a debit card, no monthly service fees, no minimum balance requirements, and Overdraft Protections Transfer Service. With Overdraft Protection Transfer Service, your Checking Account will automatically transfer funds from your Savings Account to the extend funds are available. We do not charge you a fee for this transfer."
+/>
+<EditForm Model="@CheckingOptionModel" OnInvalidSubmit="@showValidation" OnValidSubmit="@EventAfterSubmit">
+    <DataAnnotationsValidator />
+    <FormContainerComponent>
+        <div class="checkbox-options">
+            <p class="label-spacing label-title">Would you like to add Checking?</p>
+            <InputRadioGroup @bind-Value="CheckingOptionModel.CheckingSelection">
+                @foreach(var option in CheckingOptions.ListOfCheckingOptions())
+                {
+                    <div class="label-spacing">
+                        <InputRadio Value="option.Values"  id="@option.Values"/>
+                        <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                    </div>
+                }
+            </InputRadioGroup>
+        </div>
+
+        @if (CheckingOptionModel.CheckingSelection == "YesWithOverdraft" || CheckingOptionModel.CheckingSelection == "YesWithNoOverdraft")
+        {
+            <div class="checkbox-options" style="padding: 10px 0px">
+                <p class="label-spacing label-title">Would you like PSECU to auto generate your debit card PIN or do you want to select your own PIN?:</p>
+                <InputRadioGroup @bind-Value="CheckingOptionModel.DebitPinSelection">
+                    @foreach(var option in CheckingOptions.ListOfDebitPinOptions())
+                    {
+                        <div class="label-spacing">
+                            <InputRadio Value="option.Values" id="@option.Values"/>
+                            <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+
+            @if(CheckingOptionModel.DebitPinSelection == "manual")
+            {
+                <div style="padding: 10px 0px;">
+                    <TwoColumnContainerComponent>
+                        <NumberInputComponent Label="Debit Pin" @bind-Value="DebitPinModel.DebitPin" ValidationFor="@(() => DebitPinModel.DebitPin)" IsPrivate=true MaxNumber="4"/>
+                        <NumberInputComponent Label="Confirm Debit Pin" @bind-Value="DebitPinModel.ConfirmDebitPin" ValidationFor="@(() => DebitPinModel.ConfirmDebitPin)" IsPrivate=true MaxNumber="4"/>
+                    </TwoColumnContainerComponent>
+                </div>
+            }
+            <div class="checkbox-options" style="padding: 10px 0px">
+                <p class="label-spacing label-title">Would you like paper checks?</p>
+                <InputRadioGroup @bind-Value="CheckingOptionModel.PaperCheckSelection">
+                    @foreach(var option in CheckingOptions.ListOfPaperCheckOptions())
+                    {
+                        <div class="label-spacing">
+                            <InputRadio Value="option.Values" id="@option.Values" />
+                            <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+
+            @if(CheckingOptionModel.PaperCheckSelection == "yes")
+            {
+                <PaperCheck
+                    FirstName="@BasicInformation.Value.FirstName"
+                    Lastname="@BasicInformation.Value.LastName"
+                    Address="@AddressInformation.Value.ResidentialAddress"
+                    City="@AddressInformation.Value.ResidentialCity"
+                    State="@AddressInformation.Value.ResidentialState"
+                    ZipCode="@AddressInformation.Value.ResidentialZipCode"
+                    PhoneNumber="@BasicInformation.Value.PhoneNumber"
+                    showPhoneNumber=@showPhoneNumber()
+                />
+
+            <div class="checkbox-options" style="padding: 10px 0px">
+                <p class="label-spacing label-title">Your full name and address will be preprinted on your checks. Would you also like to add your contact number to your checks?</p>
+                <InputRadioGroup @bind-Value="printPhoneNumber">
+                    @foreach(var option in CheckingOptions.ListOfPrePrintedChecksOptions())
+                    {
+                        <div class="label-spacing">
+                            <InputRadio Value="option.Values" id="@option.Values" />
+                            <label for="@option.Values" style="font-size: 14px">@option.Name</Label>
+                        </div>
+                    }
+                </InputRadioGroup>
+            </div>
+            }
+
+        }
+
+    </FormContainerComponent>
+    <ProgressButtonComponents CanGoBack="true" PreviousStep="GoBackEvents"/>
+</EditForm>
+
+
+@code
+{
+    [Parameter] public EventCallback EventAfterSubmit { get; set; }
+    [Parameter] public EventCallback GoBackEvents { get; set; }
+    CheckingOptionModel CheckingOptionModel = new CheckingOptionModel();
+    CheckingOption CheckingOptions = new CheckingOption();
+    DebitPinModel DebitPinModel = new DebitPinModel();
+    private string? showIfInvalid = "display: none";
+    private string? printPhoneNumber { get; set; }
+
+    private bool showPhoneNumber()
+    {
+        if (printPhoneNumber == "yesPrePrintedChecks")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    private void showValidation() => showIfInvalid = "display: block";
+}

@@ -71,7 +71,7 @@
             FirstResponse="@AddressInformation.Value.CurrentStatus"
         />
     </Collapsable>
-    <Collapsable Title="Joint Owner Information" Collapsed="true" Value="" GoToEditLocation="completed/?edit">
+    @* <Collapsable Title="Joint Owner Information" Collapsed="true" Value="" GoToEditLocation="completed/?edit">
         <CollapsableInfoBoxContainer
             FirstTitle="First Name:"
             FirstResponse="@BasicInformation.Value.FirstName"
@@ -116,6 +116,8 @@
             FirstTitle="Citizenship:"
             FirstResponse="@AddressInformation.Value.CurrentStatus"
         />
+    </Collapsable> *@
+    <Collapsable Title="Eligibility" Collapsed="true" Value="" GoToEditLocation="">
     </Collapsable>
 </div>
 <ProgressButtonComponents CanGoBack="true" PreviousStep="GoBackEvent" OnClick="Navigator"/>

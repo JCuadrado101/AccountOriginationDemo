@@ -12,11 +12,9 @@
     {
         case "1":
             <AddChecking GoBackEvents="PreviousStep" EventAfterSubmit="OnSuccessfulSubmit" />
-            @* <GetStartedJoint EventAfterSubmit="OnSuccessfulSubmit"/> *@
         break;
         case "2":
-            <AddChecking GoBackEvents="PreviousStep" EventAfterSubmit="OnSuccessfulSubmit" />
-            @* <FundAccountStart EventAfterSubmit="OnSuccessfulSubmit" GoBackEvent="PreviousStep" /> *@
+            <AddJointChecking EventAfterSubmit="OnSuccessfulSubmit" GoBackEvents="PreviousStep" />
         break;
         default:
             <AddChecking GoBackEvents="PreviousStep" EventAfterSubmit="OnSuccessfulSubmit" />

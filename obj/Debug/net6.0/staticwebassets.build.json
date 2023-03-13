@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jPjeRVeKCCATxYpIykWKrOYfDoeoGkLt3dEXFz8A430=",
+  "Hash": "sSfxb5fld3YmABfWHId9o/fs6Bft+RBIcuD/Ha86CxM=",
   "Source": "Account-Origination-Demo",
   "BasePath": "_content/Account-Origination-Demo",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Account-Origination-Demo/wwwroot",
+      "Name": "Account-Origination-Demo\\wwwroot",
       "Source": "Account-Origination-Demo",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/jordancuadrado/.nuget/packages/blazorinputmask/1.0.14/staticwebassets/IMask.js",
+      "Identity": "C:\\Users\\jcuadrad\\.nuget\\packages\\blazorinputmask\\1.0.14\\staticwebassets\\IMask.js",
       "SourceId": "BlazorInputMask",
       "SourceType": "Package",
-      "ContentRoot": "/Users/jordancuadrado/.nuget/packages/blazorinputmask/1.0.14/staticwebassets/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\.nuget\\packages\\blazorinputmask\\1.0.14\\staticwebassets\\",
       "BasePath": "_content/BlazorInputMask",
       "RelativePath": "IMask.js",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jordancuadrado/.nuget/packages/blazorinputmask/1.0.14/staticwebassets/IMask.js"
+      "OriginalItemSpec": "C:\\Users\\jcuadrad\\.nuget\\packages\\blazorinputmask\\1.0.14\\staticwebassets\\IMask.js"
     },
     {
-      "Identity": "/Users/jordancuadrado/.nuget/packages/blazorinputmask/1.0.14/staticwebassets/main.js",
+      "Identity": "C:\\Users\\jcuadrad\\.nuget\\packages\\blazorinputmask\\1.0.14\\staticwebassets\\main.js",
       "SourceId": "BlazorInputMask",
       "SourceType": "Package",
-      "ContentRoot": "/Users/jordancuadrado/.nuget/packages/blazorinputmask/1.0.14/staticwebassets/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\.nuget\\packages\\blazorinputmask\\1.0.14\\staticwebassets\\",
       "BasePath": "_content/BlazorInputMask",
       "RelativePath": "main.js",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jordancuadrado/.nuget/packages/blazorinputmask/1.0.14/staticwebassets/main.js"
+      "OriginalItemSpec": "C:\\Users\\jcuadrad\\.nuget\\packages\\blazorinputmask\\1.0.14\\staticwebassets\\main.js"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/obj/Debug/net6.0/scopedcss/bundle/Account-Origination-Demo.styles.css",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Account-Origination-Demo.styles.css",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/obj/Debug/net6.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "Account-Origination-Demo.styles.css",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/obj/Debug/net6.0/scopedcss/bundle/Account-Origination-Demo.styles.css"
+      "OriginalItemSpec": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Account-Origination-Demo.styles.css"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/obj/Debug/net6.0/scopedcss/projectbundle/Account-Origination-Demo.bundle.scp.css",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Account-Origination-Demo.bundle.scp.css",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/obj/Debug/net6.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "Account-Origination-Demo.bundle.scp.css",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/obj/Debug/net6.0/scopedcss/projectbundle/Account-Origination-Demo.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Account-Origination-Demo.bundle.scp.css"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -184,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/open-iconic/README.md",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/css/site.css",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\css\\site.css",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/favicon.ico",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\favicon.ico",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/images/equal-housing- footer.svg",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\images\\equal-housing- footer.svg",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "images/equal-housing- footer.svg",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/equal-housing- footer.svg"
+      "OriginalItemSpec": "wwwroot\\images\\equal-housing- footer.svg"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/images/ncua- footer.svg",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\images\\ncua- footer.svg",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "images/ncua- footer.svg",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/ncua- footer.svg"
+      "OriginalItemSpec": "wwwroot\\images\\ncua- footer.svg"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/images/PSECU-check.svg",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\images\\PSECU-check.svg",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "images/PSECU-check.svg",
       "AssetKind": "All",
@@ -354,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/PSECU-check.svg"
+      "OriginalItemSpec": "wwwroot\\images\\PSECU-check.svg"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/images/PSECU.svg",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\images\\PSECU.svg",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "images/PSECU.svg",
       "AssetKind": "All",
@@ -371,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/PSECU.svg"
+      "OriginalItemSpec": "wwwroot\\images\\PSECU.svg"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/js/AutoComplete.js",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\js\\AutoComplete.js",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "js/AutoComplete.js",
       "AssetKind": "All",
@@ -388,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/AutoComplete.js"
+      "OriginalItemSpec": "wwwroot\\js\\AutoComplete.js"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/js/customMasks.js",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\js\\customMasks.js",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "js/customMasks.js",
       "AssetKind": "All",
@@ -405,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/customMasks.js"
+      "OriginalItemSpec": "wwwroot\\js\\customMasks.js"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/js/jsMasks.js",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\js\\jsMasks.js",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "js/jsMasks.js",
       "AssetKind": "All",
@@ -422,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/jsMasks.js"
+      "OriginalItemSpec": "wwwroot\\js\\jsMasks.js"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/js/NumberInput.js",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\js\\NumberInput.js",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "js/NumberInput.js",
       "AssetKind": "All",
@@ -439,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/NumberInput.js"
+      "OriginalItemSpec": "wwwroot\\js\\NumberInput.js"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/js/PhoneNumber.js",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\js\\PhoneNumber.js",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "js/PhoneNumber.js",
       "AssetKind": "All",
@@ -456,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/PhoneNumber.js"
+      "OriginalItemSpec": "wwwroot\\js\\PhoneNumber.js"
     },
     {
-      "Identity": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/js/TextInput.js",
+      "Identity": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\js\\TextInput.js",
       "SourceId": "Account-Origination-Demo",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jordancuadrado/IdeaProjects/AccountOriginationDemo/wwwroot/",
+      "ContentRoot": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\wwwroot\\",
       "BasePath": "_content/Account-Origination-Demo",
       "RelativePath": "js/TextInput.js",
       "AssetKind": "All",
@@ -473,7 +473,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/TextInput.js"
+      "OriginalItemSpec": "wwwroot\\js\\TextInput.js"
     }
   ]
 }

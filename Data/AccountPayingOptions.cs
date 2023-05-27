@@ -1,5 +1,7 @@
 namespace Account_Origination_Demo.Models;
 
+
+
 public class AccountPayingOptions
 {
     public List<AccountPayment> ListOfAccountPayingOptions()

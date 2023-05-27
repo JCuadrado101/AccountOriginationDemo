@@ -2487,26 +2487,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jcuadrad\\.nuget\\packages\\": {}
+    "/Users/jordancuadrado/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
+      "projectUniqueName": "/Users/jordancuadrado/Documents/AccountOriginationDemo/Account-Origination-Demo.csproj",
       "projectName": "Account-Origination-Demo",
-      "projectPath": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\Account-Origination-Demo.csproj",
-      "packagesPath": "C:\\Users\\jcuadrad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jcuadrad\\source\\repos\\outside\\AccountOriginationDemo\\obj\\",
+      "projectPath": "/Users/jordancuadrado/Documents/AccountOriginationDemo/Account-Origination-Demo.csproj",
+      "packagesPath": "/Users/jordancuadrado/.nuget/packages/",
+      "outputPath": "/Users/jordancuadrado/Documents/AccountOriginationDemo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jcuadrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jordancuadrado/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2568,19 +2567,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.14, 6.0.14]"
+            "version": "[6.0.13, 6.0.13]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.14, 6.0.14]"
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.13, 6.0.13]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.14, 6.0.14]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.14, 6.0.14]"
+            "version": "[6.0.13, 6.0.13]"
           }
         ],
         "frameworkReferences": {
@@ -2591,7 +2586,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-preview.1.23115.2/RuntimeIdentifierGraph.json"
       }
     }
   }

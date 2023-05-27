@@ -1,4 +1,4 @@
-namespace Account_Origination_Demo.Models
+namespace blazorform.Models
 {
     using System;
     using System.Collections.Generic;
